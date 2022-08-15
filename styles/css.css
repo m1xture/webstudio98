@@ -9,6 +9,9 @@ body {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    color:#2196F3;
+    margin-left: 215px;
+    margin-right: 1240px;
 }
 
 nav {
@@ -48,6 +51,7 @@ button[type="button"] {
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    margin-left: 724px;
 }
 h3 {
     font-family: 'Roboto';
@@ -68,9 +72,67 @@ h3 {
         letter-spacing: 0.03em;
         color: #757575;
 }
+h2 {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+}
+
+
+.team {
+    background-color:#F5F4FA;
+}
+.card {
+    width: 270px;
+    background-color:white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.h3t {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.job {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
 footer {
     background-color: #2F303A;
 }
-.team {
-    background-color:#F5F4FA;
+address {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        margin-left: 215px;
+}
+.connection {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        margin-left: 215px;
 }
