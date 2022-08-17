@@ -79,7 +79,7 @@ body {
         letter-spacing: 0.03em;
         color: #757575;
 }
-h2 {
+.h2 {
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
@@ -120,10 +120,10 @@ h2 {
     letter-spacing: 0.03em;
     color: #757575;
 }
-footer {
+#cont {
     background-color: #2F303A;
 }
-address {
+.address {
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
