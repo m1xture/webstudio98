@@ -2,6 +2,9 @@ body {
     font-family: 'Roboto';
 
 }
+ul {
+    list-style: none;
+}
 .web {
     font-family: 'Raleway';
     font-style: normal;
