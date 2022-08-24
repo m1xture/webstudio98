@@ -5,16 +5,17 @@ body {
 ul {
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
 .web {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height:1,19;
     letter-spacing: 0.03em;
     color:#2196F3;
-    margin-left: 215px;
-    margin-right: 1240px;
     text-decoration: none;
 }
 .studio-part {
@@ -22,11 +23,11 @@ ul {
 }
 
 .navigation {
-    font-family: 'Roboto';
+
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1,14;
         letter-spacing: 0.02em;
         color: black;
 }
@@ -38,11 +39,10 @@ ul {
     background-color: #2F303A;
 }
 .h1 {
-    font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
-        line-height: 60px;
+        line-height: 1,36;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -56,39 +56,35 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1,87;
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    margin-left: 724px;
 }
 .h3 {
-    font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1,14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
 }
 .lorem {
-    font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1,71;
         letter-spacing: 0.03em;
         color: #757575;
 }
 .h2 {
-    font-family: 'Roboto';
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
+        line-height: 1,16;
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
@@ -105,21 +101,19 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 .h3t {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1,18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
 .job {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1,18;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
@@ -128,22 +122,18 @@ ul {
     background-color: #2F303A;
 }
 .address {
-    font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1,71;
         letter-spacing: 0.03em;
         color: #FFFFFF;
-        margin-left: 215px;
 }
 .connection {
-    font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1,71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-        margin-left: 215px;
 }
