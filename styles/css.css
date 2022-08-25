@@ -11,6 +11,8 @@ a {
 }
 header {
     display: flex;
+    width:1600px;
+    height: 80px;
 }
 .web {
     font-family: 'Raleway';
@@ -34,7 +36,7 @@ header {
         line-height: 1,14;
         letter-spacing: 0.02em;
         color: black;
-        /* justify-content: ; */
+        justify-content: space-around;
 }
 
 .navigation:hover {
@@ -47,11 +49,19 @@ header {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    display: flex;
     justify-content: end;
+}
+.navigation-contacts:hover {
+    color: #2196F3;
 }
 .hero {
     background-color: #2F303A;
+    height: 600px;
+    width: 1700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .hero-title {
         font-style: normal;
@@ -62,6 +72,7 @@ header {
         letter-spacing: 0.06em;
         text-transform: uppercase;
         color: #FFFFFF;
+        flex-wrap: wrap;
 }
 .hero-button {
     background: #2196F3;
@@ -78,8 +89,10 @@ header {
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+
 .why-we-list {
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 .why-we-list-title {
         font-style: normal;
@@ -97,9 +110,14 @@ header {
         line-height: 1,71;
         letter-spacing: 0.03em;
         color: #757575;
+        flex-wrap: wrap;
 }
 .about-list {
     justify-content: center;
+}
+.about-img {
+    margin-right: 30px;
+    margin-left: 30px;
 }
 .about-title {
         font-style: normal;
@@ -119,16 +137,30 @@ header {
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
+        /* justify-content: center;
+        display: flex; */
 }
 
 .team {
     background-color:#F5F4FA;
+    width: 1600px;
+    align-content: center;
+    display: flex;
+        flex-wrap: wrap;
+    align-content: center;
+
 }
 .team-card {
     width: 270px;
     background-color:white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-top: 186px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+
 }
 .team-list-title {
     font-style: normal;
@@ -138,6 +170,8 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    align-content: center;
+    text-align: center;
 }
 .team-list-text {
     font-style: normal;
@@ -147,6 +181,8 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    flex-wrap: wrap;
+    align-content: center;
 }
 #footer {
     background-color: #2F303A;
