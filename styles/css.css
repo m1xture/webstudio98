@@ -4,9 +4,13 @@ body {
 }
 ul {
     list-style: none;
+    display: flex;
 }
 a {
     text-decoration: none;
+}
+header {
+    display: flex;
 }
 .web {
     font-family: 'Raleway';
@@ -30,11 +34,22 @@ a {
         line-height: 1,14;
         letter-spacing: 0.02em;
         color: black;
+        /* justify-content: ; */
 }
 
 .navigation:hover {
     color: #2196F3;
-}    
+}   
+.navigation-contacts {
+    color: #757575;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    display: flex;
+    justify-content: end;
+}
 .hero {
     background-color: #2F303A;
 }
@@ -63,6 +78,9 @@ a {
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+.why-we-list {
+    justify-content: space-around;
+}
 .why-we-list-title {
         font-style: normal;
         font-weight: 700;
@@ -79,6 +97,9 @@ a {
         line-height: 1,71;
         letter-spacing: 0.03em;
         color: #757575;
+}
+.about-list {
+    justify-content: center;
 }
 .about-title {
         font-style: normal;
