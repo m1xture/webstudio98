@@ -38,7 +38,7 @@ a {
 .hero {
     background-color: #2F303A;
 }
-.h1 {
+.hero-title {
         font-style: normal;
         font-weight: 900;
         font-size: 44px;
@@ -48,7 +48,7 @@ a {
         text-transform: uppercase;
         color: #FFFFFF;
 }
-.button {
+.hero-button {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -63,7 +63,7 @@ a {
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-.h3 {
+.why-we-list-title {
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -72,7 +72,7 @@ a {
         text-transform: uppercase;
         color: #212121;
 }
-.lorem {
+.why-we-list-text {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -80,7 +80,7 @@ a {
         letter-spacing: 0.03em;
         color: #757575;
 }
-.h2 {
+.about-title {
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
@@ -90,17 +90,26 @@ a {
         color: #212121;
 }
 
+.team-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1,16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+}
 
 .team {
     background-color:#F5F4FA;
 }
-.card {
+.team-card {
     width: 270px;
     background-color:white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-.h3t {
+.team-list-title {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -109,7 +118,7 @@ a {
     letter-spacing: 0.03em;
     color: #212121;
 }
-.job {
+.team-list-text {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -118,7 +127,7 @@ a {
     letter-spacing: 0.03em;
     color: #757575;
 }
-#cont {
+#footer {
     background-color: #2F303A;
 }
 .address {
