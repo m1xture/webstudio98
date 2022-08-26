@@ -4,15 +4,17 @@ body {
 }
 ul {
     list-style: none;
-    display: flex;
+    /* display: flex; */
+    padding: 0;
 }
 a {
     text-decoration: none;
 }
 header {
     display: flex;
-    width:1600px;
     height: 80px;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 .web {
     font-family: 'Raleway';
@@ -23,35 +25,46 @@ header {
     letter-spacing: 0.03em;
     color:#2196F3;
     text-decoration: none;
+    display: flex;
+    width: 145px;
 }
 .studio-part {
     color:black;
 }
 
-.navigation {
-
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1,14;
-        letter-spacing: 0.02em;
-        color: black;
-        justify-content: space-around;
+.nav-list {
+    display: flex;
+    justify-content: center;
+        outline: 1px solid red;
+        margin-right: 453px;
 }
-
-.navigation:hover {
+.nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+    color: black;
+    margin-left:54px ;
+}
+.nav-link:hover {
     color: #2196F3;
-}   
-.navigation-contacts {
+} 
+.header-list{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 32px;
+    margin-right: 100px;
+}  
+.header-link {
     color: #757575;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    justify-content: end;
 }
-.navigation-contacts:hover {
+.header-link:hover {
     color: #2196F3;
 }
 .hero {
@@ -113,6 +126,7 @@ header {
         flex-wrap: wrap;
 }
 .about-list {
+    display: flex;
     justify-content: center;
 }
 .about-img {
