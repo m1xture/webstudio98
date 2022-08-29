@@ -6,6 +6,7 @@ ul {
     list-style: none;
     /* display: flex; */
     padding: 0;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -16,6 +17,12 @@ header {
     height: 80px;
     padding-bottom: 32px;
     padding-top: 32px;
+}
+h3 {
+    margin: 0;
+}
+.team-title {
+    margin: 0;
 }
 .web {
     font-family: 'Raleway';
@@ -36,7 +43,6 @@ header {
 .nav-list {
     display: flex;
     justify-content: center;
-        outline: 1px solid red;
         margin-left: 200px;
 }
 .nav-items:first-child{
@@ -59,7 +65,7 @@ header {
     align-items: center;
     margin-top: 32px;
     padding-left: 253px; 
-    outline: 1px solid red;
+    margin-bottom: 32px;
 }  
 .header-link {
     color: #757575;
@@ -71,6 +77,12 @@ header {
 .header-link:hover {
     color: #2196F3;
 }
+.header-list-item {
+        padding-left: 30px;
+}
+/* .header-img {
+    padding-right:0;
+} */
 .hero {
     background-color: #2F303A;
     height: 600px;
@@ -81,7 +93,7 @@ header {
     flex-direction: column;
 }
 .hero-title {
-
+        width: 696px;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -104,11 +116,21 @@ header {
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    width: 200px;
+    height: 50px;
+    margin-top: 1px;
+    padding-left: 24px;
 }
 
 .why-we-list {
+    display: flex;
     justify-content: center;
-    align-items: center;
+
+}
+.why-we-list-items {
+    /* justify-content: space-around; */
+    width: 270px;
+    margin-left: 30px;
 }
 .why-we-list-title {
 
@@ -118,6 +140,7 @@ header {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #212121;
+        padding-top: 94px;
 }
 .why-we-list-text {
 
@@ -131,6 +154,9 @@ header {
 .about-list {
     display: flex;
     justify-content: center;
+    margin-left: 215px;
+    margin-right: 215px;
+    padding-bottom:94px;
 }
 .about-img {
     margin-right: 30px;
@@ -144,39 +170,45 @@ header {
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
+        padding-top: 94px;
+        padding-bottom: 50px;
 }
+.team {
+    background-color:#F5F4FA;
+    width: 1770px;
+    height: 648px;
+    align-content: center;
 
+}
 .team-title {
-
         font-weight: 700;
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
+        padding-top: 94px;
+        padding-bottom: 50px;
         /* justify-content: center;
         display: flex; */
 }
-
-.team {
-    background-color:#F5F4FA;
-    width: 1600px;
-    align-content: center;
+.team-list {
     display: flex;
-        flex-wrap: wrap;
-    align-content: center;
-
+    justify-content: center;
 }
-.team-card {
+
+.team-item {
     width: 270px;
+    height: 368px;
     background-color:white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-top: 186px;
-    display: flex;
+    margin-left: 30px;
+    /* margin-top: 186px; */
+    /* display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: center; */
 
 }
 .team-list-title {
@@ -188,6 +220,10 @@ header {
     color: #212121;
     align-content: center;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
 }
 .team-list-text {
     font-weight: 400;
@@ -198,9 +234,34 @@ header {
     color: #757575;
     flex-wrap: wrap;
     align-content: center;
+    margin-top: 10px;
+    margin-bottom:30px;
+}
+.team-list:first-child {
+    margin-left: 0;
 }
 .footer {
     background-color: #2F303A;
+    margin: 0;
+    height: 252px;
+    padding-top:19px ;
+}
+.footer-title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height:1.19;
+    letter-spacing: 0.03em;
+    color:#2196F3;
+    text-decoration: none;
+    display: flex;
+    width: 145px;
+    padding-left: 215px;
+    display: flex;
+    /* padding-top: 60px; */
+}
+.footer-title-part {
+    color:#FFFFFF
 }
 .address {
 
@@ -209,6 +270,10 @@ header {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #FFFFFF;
+        /* display: flex; */
+        padding-left: 215px;
+        font-style: normal;
+        margin-top:111px ;
 }
 .connection {
 
@@ -217,4 +282,7 @@ header {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+        padding-left: 215px;
+        display: flex;
+        /* padding-bottom: 60px; */
 }
