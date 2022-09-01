@@ -1,0 +1,81 @@
+body {
+  font-family: 'Roboto';
+}
+ul {
+  list-style: none;
+  /* display: flex; */
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+h3 {
+  margin: 0;
+}
+.team-title {
+  margin: 0;
+}
+.web {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  text-decoration: none;
+  display: flex;
+  width: 145px;
+  padding-left: 215px;
+}
+.studio-part {
+  color: black;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+}
+.nav-items:first-child {
+  margin: 0;
+  padding: 0;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: black;
+  margin-left: 54px;
+}
+.nav-link:hover {
+  color: #2196f3;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  padding-left: 253px;
+  margin-bottom: 32px;
+}
+.header-link {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-link:hover {
+  color: #2196f3;
+}
+.header-list-item {
+  padding-left: 30px;
+}

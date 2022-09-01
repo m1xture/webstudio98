@@ -17,11 +17,23 @@ header {
   padding-bottom: 32px;
   padding-top: 32px;
 }
-h3 {
-  margin: 0;
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p{
+  margin:0;
 }
 .team-title {
   margin: 0;
+}
+.container {
+  width:1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid red;
 }
 .web {
   font-family: 'Raleway';
@@ -33,7 +45,7 @@ h3 {
   text-decoration: none;
   display: flex;
   width: 145px;
-  padding-left: 215px;
+  /* padding-left: 215px; */
 }
 .studio-part {
   color: black;
@@ -42,19 +54,19 @@ h3 {
 .nav-list {
   display: flex;
   justify-content: center;
-  margin-left: 200px;
+  /* margin-left: 200px; */
 }
-.nav-items:first-child {
+/* .nav-items:first-child {
   margin: 0;
   padding: 0;
-}
+} */
 .nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: black;
-  margin-left: 54px;
+  /* margin-left: 54px; */
 }
 .nav-link:hover {
   color: #2196f3;
@@ -62,9 +74,9 @@ h3 {
 .header-list {
   display: flex;
   align-items: center;
-  margin-top: 32px;
+  /* margin-top: 32px;
   padding-left: 253px;
-  margin-bottom: 32px;
+  margin-bottom: 32px; */
 }
 .header-link {
   color: #757575;
@@ -77,10 +89,10 @@ h3 {
   color: #2196f3;
 }
 .header-list-item {
-  padding-left: 30px;
+  /* padding-left: 30px; */
 }
-/* .header-img {
-    padding-right:0;
+ /* .header-img {
+    color: solid#757575;
 } */
 .hero {
   background-color: #2f303a;
@@ -120,7 +132,9 @@ h3 {
   margin-top: 1px;
   padding-left: 24px;
 }
-
+.why-we {
+  outline:1px solid red;
+}
 .why-we-list {
   display: flex;
   justify-content: center;
@@ -146,6 +160,9 @@ h3 {
   letter-spacing: 0.03em;
   color: #757575;
   flex-wrap: wrap;
+}
+.about-section {
+  outline:1px solid red;
 }
 .about-list {
   display: flex;
@@ -173,6 +190,7 @@ h3 {
   width: 1770px;
   height: 648px;
   align-content: center;
+  outline:1px solid red;
 }
 .team-title {
   font-weight: 700;
@@ -239,6 +257,7 @@ h3 {
   margin: 0;
   height: 252px;
   padding-top: 19px;
+  outline: 1px solid red;
 }
 .footer-title {
   font-family: 'Raleway';
@@ -266,7 +285,6 @@ h3 {
   /* display: flex; */
   padding-left: 215px;
   font-style: normal;
-  margin-top: 111px;
 }
 .connection {
   font-weight: 400;
