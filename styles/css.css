@@ -35,7 +35,7 @@ p{
   margin-left: auto;
   outline: 1px solid red;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .web {
   font-family: 'Raleway';
@@ -49,6 +49,9 @@ p{
   width: 145px;
   /* padding-left: 215px; */
 }
+.web {
+  padding-top: 24px;
+}
 .studio-part {
   color: black;
 }
@@ -58,7 +61,7 @@ p{
   justify-content: center;
   padding-top:32px;
   padding-bottom:32px;
-  margin-left: 93px;
+  /* padding-left: 93px; */
 }
 .nav-list:last-child {
   margin-left: 0;
@@ -257,7 +260,7 @@ p{
 }
 .footer {
   background-color: #2f303a;
-  margin: 0;
+  padding-top: 60px;
   height: 252px;
   padding-top: 19px;
   outline: 1px solid red;
