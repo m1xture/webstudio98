@@ -12,18 +12,39 @@ a {
 }
 header {
   display: flex;
-  align-items: center;
   height: 80px;
-  padding-bottom: 32px;
-  padding-top: 32px;
 }
+header {
+  display: flex;
+  /* align-items: center;*/
+  height: 80px;
+  /*padding-bottom: 32px;
+  padding-top: 32px; */
+}
+h1,
+h2,
 h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
   margin: 0;
 }
-.team-title {
-  margin: 0;
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  outline: 1px solid green;
+  /* align-items: center; */
+}
+header .container {
+  display: flex;
 }
 .web {
+  display: flex;
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -33,20 +54,26 @@ h3 {
   text-decoration: none;
   display: flex;
   width: 145px;
-  padding-left: 215px;
+  /* padding-left: 215px; */
+}
+.web {
+  padding-top: 24px;
 }
 .studio-part {
   color: black;
+  display: flex;
 }
 
 .nav-list {
   display: flex;
   justify-content: center;
-  margin-left: 200px;
+  padding-top: 32px;
+  padding-left: 93px;
+  /*padding-bottom:32px; */
+  /* padding-left: 93px; */
 }
-.nav-items:first-child {
-  margin: 0;
-  padding: 0;
+.nav-list:last-child {
+  margin-left: 0;
 }
 .nav-link {
   font-weight: 500;
@@ -54,7 +81,7 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: black;
-  margin-left: 54px;
+  margin-right: 54px;
 }
 .nav-link:hover {
   color: #2196f3;
@@ -62,9 +89,9 @@ h3 {
 .header-list {
   display: flex;
   align-items: center;
-  margin-top: 32px;
-  padding-left: 253px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-left: auto;
 }
 .header-link {
   color: #757575;
@@ -77,5 +104,30 @@ h3 {
   color: #2196f3;
 }
 .header-list-item {
-  padding-left: 30px;
+  margin-left: 30px;
+}
+
+
+/* Main */
+
+
+.filters-section {
+  display: flex;
+  justify-content: center;
+}
+.filters-button {
+  Font family: Roboto;
+  Font style: Medium;
+  Font size: 16px;
+  Line height: 26px;
+  Line height: 139%;
+  Align: Center;
+  Vertical align: Top;
+  Letter spacing: 3%;
+  background-color:#F5F4FA;
+  margin-top: 94px;
+}
+.filters-button:hover {
+  background-color:#2196F3;
+  color:white
 }
