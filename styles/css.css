@@ -17,16 +17,18 @@ header {
   /*padding-bottom: 32px;
   padding-top: 32px; */
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-top: 0;
   margin-bottom: 0;
 }
-p{
-  margin:0;
+p {
+  margin: 0;
 }
 
 .container {
-  width:1200px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -61,8 +63,8 @@ header .container {
 .nav-list {
   display: flex;
   justify-content: center;
-   padding-top:32px;
-   padding-left: 93px;
+  padding-top: 32px;
+  padding-left: 93px;
   /*padding-bottom:32px; */
   /* padding-left: 93px; */
 }
@@ -83,8 +85,8 @@ header .container {
 .header-list {
   display: flex;
   align-items: center;
-  padding-top:32px;
-  padding-bottom:32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: auto;
 }
 .header-link {
@@ -100,22 +102,21 @@ header .container {
 .header-list-item {
   margin-left: 30px;
 }
- /* .header-img {
+/* .header-img {
     color: solid#757575;
 } */
 
-
 /* Hero */
-
 
 .hero {
   background-color: #2f303a;
   /* height: 600px; */
-  width: 1700px;
+  /* width: 1700px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 200px;
 }
 .hero-title {
   width: 696px;
@@ -127,7 +128,7 @@ header .container {
   text-transform: uppercase;
   color: #ffffff;
   flex-wrap: wrap;
-  padding-top:200px;
+  padding-top: 200px;
 }
 .hero-button {
   background: #2196f3;
@@ -146,15 +147,12 @@ header .container {
   height: 50px;
   margin-top: 30px;
   padding-left: 24px;
-  margin-bottom: 200px;
 }
-
 
 /* Why-we */
 
-
 .why-we {
-  outline:1px solid red;
+  outline: 1px solid red;
 }
 .why-we-list {
   display: flex;
@@ -188,9 +186,8 @@ header .container {
 
 /* About */
 
-
 .about-section {
-  outline:1px solid red;
+  outline: 1px solid red;
 }
 .about-list {
   display: flex;
@@ -214,20 +211,21 @@ header .container {
   padding-bottom: 50px;
 }
 
-
 /* Team */
 
 .team .container {
   margin-left: auto;
   margin-right: auto;
+  padding-top:  94px;
 }
 .team {
   background-color: #f5f4fa;
   height: 648px;
   align-content: center;
-  outline:1px solid red;
+  outline: 1px solid red;
   margin-right: auto;
   margin-left: auto;
+
 }
 .team-title {
   font-weight: 700;
@@ -236,8 +234,9 @@ header .container {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  -top: 94px;
+  margin-bottom: 50px;
+  outline:1px solid violet
   /* justify-content: center;
         display: flex; */
 }
@@ -287,15 +286,13 @@ header .container {
   flex-wrap: wrap;
   align-content: center;
   margin-top: 10px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .team-list:first-child {
   margin-left: 0;
 }
 
-
 /* Footer */
-
 
 .footer {
   background-color: #2f303a;
@@ -327,6 +324,7 @@ header .container {
   color: #ffffff;
   /* display: flex; */
   font-style: normal;
+  padding-top: 20px;
 }
 .connection {
   font-weight: 400;
@@ -335,8 +333,8 @@ header .container {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: flex;
+  margin-top: 9px;
 }
 footer .container {
   padding-bottom: 63px;
 }
-
