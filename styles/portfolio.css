@@ -117,6 +117,7 @@ header .container {
   margin-right: 8px;
   padding-top:6px;
   padding-bottom:6px;
+  border: 0;
 }
 .filters-list {
   display: flex;

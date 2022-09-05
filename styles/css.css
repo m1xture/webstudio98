@@ -96,6 +96,11 @@ header .container {
 }
 .header-list-item {
   margin-left: 30px;
+  dis
+}
+.header-img {
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 /* Hero */
@@ -137,6 +142,7 @@ header .container {
   height: 50px;
   margin-top: 30px;
   padding-left: 24px;
+  border: 0;
 }
 
 /* Why-we */
