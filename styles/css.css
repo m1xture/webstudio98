@@ -99,8 +99,9 @@ header .container {
   dis
 }
 .header-img {
-  padding-bottom: 32px;
-  padding-top: 32px;
+  /* padding-bottom: 32px;
+  padding-top: 32px; */
+  /* display:flex; */
 }
 
 /* Hero */
@@ -176,6 +177,7 @@ header .container {
   letter-spacing: 0.03em;
   color: #757575;
   flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 /* About */
@@ -303,7 +305,7 @@ header .container {
   letter-spacing: 0.03em;
   color: #ffffff;
   font-style: normal;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .connection {
   font-weight: 400;
