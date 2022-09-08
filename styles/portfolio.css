@@ -12,6 +12,13 @@ a {
 header {
   display: flex;
   height: 80px;
+  padding-bottom: 32px;
+}
+header .nav-list, .header-list {
+  padding-top:32px;
+}
+header .web {
+  padding-top:24px;
 }
 h1,
 h2,
@@ -33,6 +40,9 @@ p {
 header .container {
   display: flex;
 }
+nav {
+  display: flex;
+}
 .web {
   display: flex;
   font-family: 'Raleway';
@@ -45,23 +55,23 @@ header .container {
   display: flex;
   width: 145px;
 }
-.web {
-  padding-top: 24px;
-}
 .studio-part {
   color: black;
   display: flex;
 }
-
+nav {
+  display: flex;
+}
 .nav-list {
   display: flex;
   justify-content: center;
-  padding-top: 32px;
-  padding-left: 93px;
+  margin-left: 93px;
+
 }
 .nav-list:last-child {
-  margin-left: 0;
+  margin-right: 0;
 }
+
 .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -69,6 +79,7 @@ header .container {
   letter-spacing: 0.02em;
   color: black;
   margin-right: 54px;
+
 }
 .nav-link:hover {
   color: #2196f3;
@@ -76,8 +87,6 @@ header .container {
 .header-list {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: auto;
 }
 .header-link {
@@ -216,7 +225,7 @@ header .container {
   color: #ffffff;
   /* display: flex; */
   font-style: normal;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .connection {
   font-weight: 400;

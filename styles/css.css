@@ -12,10 +12,14 @@ a {
 }
 header {
   display: flex;
-  /* align-items: center;*/
   height: 80px;
-  /*padding-bottom: 32px;
-  padding-top: 32px; */
+  padding-bottom: 32px;
+}
+header .nav-list, .header-list {
+  padding-top: 32px;
+}
+header .web {
+  padding-top:24px;
 }
 h1,
 h2,
@@ -26,7 +30,6 @@ h3 {
 p {
   margin: 0;
 }
-
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -35,6 +38,9 @@ p {
   margin-left: auto;
 }
 header .container {
+  display: flex;
+}
+nav {
   display: flex;
 }
 .web {
@@ -49,23 +55,23 @@ header .container {
   display: flex;
   width: 145px;
 }
-.web {
-  padding-top: 24px;
-}
 .studio-part {
   color: black;
   display: flex;
 }
-
+nav {
+  display: flex;
+}
 .nav-list {
   display: flex;
   justify-content: center;
-  padding-top: 32px;
-  padding-left: 93px;
+  margin-left: 93px;
+
 }
 .nav-list:last-child {
-  margin-left: 0;
+  margin-right: 0;
 }
+
 .nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -73,6 +79,7 @@ header .container {
   letter-spacing: 0.02em;
   color: black;
   margin-right: 54px;
+
 }
 .nav-link:hover {
   color: #2196f3;
@@ -80,8 +87,6 @@ header .container {
 .header-list {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: auto;
 }
 .header-link {
@@ -96,12 +101,6 @@ header .container {
 }
 .header-list-item {
   margin-left: 30px;
-  dis
-}
-.header-img {
-  /* padding-bottom: 32px;
-  padding-top: 32px; */
-  /* display:flex; */
 }
 
 /* Hero */
@@ -148,8 +147,9 @@ header .container {
 
 /* Why-we */
 
-/* .why-we {
-} */
+.why-we {
+    padding-top: 94px;
+}
 .why-we-list {
   display: flex;
   justify-content: center;
@@ -168,7 +168,6 @@ header .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
-  padding-top: 94px;
 }
 .why-we-list-text {
   font-weight: 400;
@@ -182,15 +181,15 @@ header .container {
 
 /* About */
 
-/* .about-section {
-  outline: 1px solid red;
-} */
+.about-section {
+    padding-top: 94px;
+}
 .about-list {
   display: flex;
   justify-content: center;
   padding-bottom: 94px;
 }
-.about-img {
+.about-list-item {
   margin-right: 30px;
   margin-left: 30px;
 }
@@ -201,8 +200,7 @@ header .container {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* Team */
@@ -214,7 +212,6 @@ header .container {
 }
 .team {
   background-color: #f5f4fa;
-  height: 648px;
   align-content: center;
   margin-right: auto;
   margin-left: auto;
@@ -233,6 +230,7 @@ header .container {
 .team-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 94px;
 }
 
 .team-item {
