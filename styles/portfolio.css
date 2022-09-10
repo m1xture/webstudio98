@@ -102,7 +102,9 @@ nav {
 .header-list-item {
   margin-left: 30px;
 }
-
+.header-list-item:first-child {
+  margin-left:0;
+}
 
 /* Main */
 
@@ -110,6 +112,7 @@ nav {
 .filters-section {
   display: flex;
   justify-content: center;
+  padding-top:94px;
 }
 .filters-button {
   font-family: 'Roboto';
@@ -122,7 +125,6 @@ nav {
   color: #212121;
   border-radius: 4px;
   background-color:#F5F4FA;
-  margin-top: 94px;
   margin-right: 8px;
   padding-top:6px;
   padding-bottom:6px;
