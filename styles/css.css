@@ -102,15 +102,34 @@ nav {
 .header-list-item {
   margin-left: 30px;
 }
+.header-list-item:first-child::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  display:inline-block;
+  background-image:url(../images12/envelope.svg) ;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
 .header-list-item:first-child {
   margin-left:0;
 }
-.header-img {
+.header-list-item:last-child::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  display:inline-block;
+  background-image: url(../images12/smartphone.svg);
+  background-repeat: no-repeat;
   margin-right: 10px;
 }
-.header-img:last-child{
+
+/* .header-img {
+  margin-right: 10px;
+} */
+/* .header-img:last-child{
   paddinng-top: 2px
-}
+} */
 /* Hero */
 
 .hero {
