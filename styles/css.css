@@ -13,13 +13,14 @@ a {
 header {
   display: flex;
   height: 80px;
-  padding-bottom: 32px;
 }
 header .nav-list, .header-list {
-  padding-top: 32px;
+  /* padding-bottom: 0 */
 }
 header .web {
-  padding-top:24px;
+  align-items: center;
+    padding-bottom: 24px;
+  padding-top: 25px;
 }
 h1,
 h2,
@@ -66,6 +67,9 @@ nav {
   display: flex;
   justify-content: center;
   margin-left: 93px;
+  /* padding-bottom: 32px;
+  padding-top: 32px; */
+  align-items: center;
 
 }
 /* .nav-link:nth-child(3) {
@@ -101,6 +105,8 @@ nav {
 }
 .header-list-item {
   margin-left: 30px;
+  display: flex;
+  align-items: center;
 }
 .header-list-item:first-child::before {
   content: "";
@@ -114,15 +120,22 @@ nav {
 .header-list-item:first-child {
   margin-left:0;
 }
+.header-list-item:last-child{
+
+}
 .header-list-item:last-child::before {
   content: "";
   width: 16px;
-  height: 12px;
+  height: 16px;
   display:inline-block;
   background-image: url(../images12/smartphone.svg);
   background-repeat: no-repeat;
   margin-right: 10px;
-}
+  /* align-items: center;
+  display: flex; */
+  /* padding-bottom: 32px;
+  /* padding-top: 32px; */
+}  
 
 /* .header-img {
   margin-right: 10px;
@@ -133,7 +146,6 @@ nav {
 /* Hero */
 
 .hero {
-  /* background-color: #2F303A; */
   display: flex;
   justify-content: center;
   align-items: center;

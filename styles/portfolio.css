@@ -12,13 +12,13 @@ a {
 header {
   display: flex;
   height: 80px;
-  padding-bottom: 32px;
+  padding-bottom: 25px;
   border: 1px solid #ECECEC;
 }
 header .nav-list, .header-list {
   padding-top:32px;
 }
-header .web {
+ header .web {
   padding-top:24px;
 }
 h1,
@@ -106,7 +106,27 @@ nav {
 .header-list-item:first-child {
   margin-left:0;
 }
-
+.header-list-item:first-child::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  display:inline-block;
+  background-image:url(../images12/envelope.svg) ;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.header-list-item:first-child {
+  margin-left:0;
+}
+.header-list-item:last-child::before {
+  content: "";
+  width: 16px;
+  height: 12px;
+  display:inline-block;
+  background-image: url(../images12/smartphone.svg);
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
 /* Main */
 
 
