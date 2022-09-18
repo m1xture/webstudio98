@@ -67,12 +67,10 @@ nav {
   display: flex;
   justify-content: center;
   margin-left: 93px;
-  /* padding-bottom: 32px;
-  padding-top: 32px; */
   align-items: center;
 
 }
-/* .nav-link:nth-child(3) {
+/* .nav-list-item:nth-child(3) {
   margin-right: 0;
 } */
 
@@ -120,29 +118,15 @@ nav {
 .header-list-item:first-child {
   margin-left:0;
 }
-.header-list-item:last-child{
-
-}
 .header-list-item:last-child::before {
   content: "";
-  width: 16px;
+  width: 10px;
   height: 16px;
   display:inline-block;
   background-image: url(../images12/smartphone.svg);
   background-repeat: no-repeat;
   margin-right: 10px;
-  /* align-items: center;
-  display: flex; */
-  /* padding-bottom: 32px;
-  /* padding-top: 32px; */
 }  
-
-/* .header-img {
-  margin-right: 10px;
-} */
-/* .header-img:last-child{
-  paddinng-top: 2px
-} */
 /* Hero */
 
 .hero {

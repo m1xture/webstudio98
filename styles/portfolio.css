@@ -12,14 +12,16 @@ a {
 header {
   display: flex;
   height: 80px;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   border: 1px solid #ECECEC;
 }
-header .nav-list, .header-list {
+/* header .nav-list, .header-list {
   padding-top:32px;
-}
+} */
  header .web {
-  padding-top:24px;
+  padding-top:25px;
+  padding-bottom: 24px;
+  align-items: center;
 }
 h1,
 h2,
@@ -67,6 +69,7 @@ nav {
   display: flex;
   justify-content: center;
   margin-left: 93px;
+  align-items: center;
 
 }
 .nav-list:last-child {
@@ -102,6 +105,8 @@ nav {
 }
 .header-list-item {
   margin-left: 30px;
+  display: flex;
+  align-items: center;
 }
 .header-list-item:first-child {
   margin-left:0;
@@ -120,8 +125,8 @@ nav {
 }
 .header-list-item:last-child::before {
   content: "";
-  width: 16px;
-  height: 12px;
+  width: 10px;
+  height: 16px;
   display:inline-block;
   background-image: url(../images12/smartphone.svg);
   background-repeat: no-repeat;
