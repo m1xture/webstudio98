@@ -288,12 +288,13 @@ nav {
 
 .team-item {
   width: 270px;
-  height: 368px;
+  /* height: 368px; */
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-left: 30px;
+  padding-bottom: 30px;
 }
 .team-item:first-child {
   margin-left: 0;
@@ -322,10 +323,46 @@ nav {
   flex-wrap: wrap;
   align-content: center;
   margin-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 28px;
 }
 .team-list:first-child {
   margin-left: 0;
+}
+.team-list-svg {
+  display: flex;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.team-list-svg-item {
+  
+  margin-right: 34px;
+  fill: #AFB1B8;
+  width:44px;
+  height: 44px;
+
+}
+.team-list-svg-item:hover {
+  fill: #fff;
+  background-color: #2196f3;
+  justify-content: center;
+  vertical-align: center;
+}
+.team-list-svg-item:last-child {
+  margin-right: 0px;
+}
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1,16;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
 }
 
 /* Footer */
