@@ -350,6 +350,11 @@ nav {
 .team-list-svg-item:last-child {
   margin-right: 0px;
 }
+
+
+/* Clients */
+
+
 .clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -363,6 +368,30 @@ line-height: 1,16;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+}
+.clients-list-item {
+  width: 170px;
+  height:90px;
+  margin-right: 30px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill:#AFB1B8;
+}
+.clients-list-item:hover {
+  fill:#2196f3;
+  border-color: #2196f3;
+}
+.clients-list-item:last-child {
+  margin-right: 0;
+
 }
 
 /* Footer */
