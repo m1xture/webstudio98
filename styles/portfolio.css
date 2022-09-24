@@ -101,36 +101,21 @@ nav {
   letter-spacing: 0.02em;
 }
 .header-link:hover {
+  fill:#2196f3;
   color: #2196f3;
 }
 .header-list-item {
   margin-left: 30px;
   display: flex;
   align-items: center;
+  color:#757575
 }
 .header-list-item:first-child {
   margin-left:0;
 }
-.header-list-item:first-child::before {
-  content: "";
-  width: 16px;
-  height: 12px;
-  display:inline-block;
-  background-image:url(../images12/envelope.svg) ;
-  background-repeat: no-repeat;
+.header-list-pic {
   margin-right: 10px;
-}
-.header-list-item:first-child {
-  margin-left:0;
-}
-.header-list-item:last-child::before {
-  content: "";
-  width: 10px;
-  height: 16px;
-  display:inline-block;
-  background-image: url(../images12/smartphone.svg);
-  background-repeat: no-repeat;
-  margin-right: 10px;
+  fill:currentColor;
 }
 /* Main */
 
