@@ -96,6 +96,8 @@ nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+   display: flex;
+  align-items: center;
   letter-spacing: 0.02em;
 }
 /* .header-link:hover {
@@ -103,8 +105,7 @@ nav {
 } */
 .header-list-item {
   margin-left: 30px;
-  display: flex;
-  align-items: center;
+ 
   color:#757575;
 }
 .header-link:hover {
@@ -470,7 +471,8 @@ nav {
 }
 footer .container {
   padding-bottom: 63px;
-  padding-left: 215px;
+  /* padding-right: 0; */
+  display:flex;
 }
 .footer-subtitle {
   font-family: 'Roboto';
@@ -485,6 +487,7 @@ footer .container {
 }
 .footer-block {
   padding-right: 878px;
+  margin-left: 70px;
 }
 .footer-list-svg {
   display: flex;
