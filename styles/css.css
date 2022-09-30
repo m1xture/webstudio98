@@ -265,6 +265,29 @@ nav {
 .about-list-item {
   margin-right: 30px;
   margin-left: 30px;
+   position: relative;
+}
+.about-list-img {
+ 
+}
+.about-list-subtitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.about-list-subtitle:first {
+  position: absolute;
+width: 182px;
+height: 16px;
+left: 309px;
+top: 1462px;
+
 }
 .about-title {
   font-weight: 700;
