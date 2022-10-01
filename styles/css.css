@@ -91,12 +91,12 @@ nav {
   margin-left: auto;
 }
 .header-link {
-  color:#757575;
-   /* fill: #757575; */
+  color: #757575;
+  /* fill: #757575; */
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-   display: flex;
+  display: flex;
   align-items: center;
   letter-spacing: 0.02em;
 }
@@ -105,11 +105,11 @@ nav {
 } */
 .header-list-item {
   margin-left: 30px;
- 
-  color:#757575;
+
+  color: #757575;
 }
 .header-link:hover {
-  fill:#2196f3;
+  fill: #2196f3;
   color: #2196f3;
 }
 /* .header-list-item:hover{
@@ -139,9 +139,8 @@ nav {
 } */
 .header-list-pic {
   margin-right: 10px;
-  fill:currentColor;
+  fill: currentColor;
 }
-
 
 /* Hero */
 
@@ -193,6 +192,73 @@ nav {
   border: 0;
 }
 
+/* Modal  */
+
+.modal-section {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  left: 536px;
+  
+}
+.modal-title {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+.modal-container {
+  position: relative;
+}
+.modal-list-item {
+  display: flex;
+  flex-direction: column;
+}
+.modal-input {
+  width: 448px;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  
+
+
+}
+.modal-svg {
+  position: absolute;
+
+}
+.modal-list-label {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+letter-spacing: 0.01em;
+
+color: #757575;
+}
+.modal-textarea {
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+}
+.modal-checkbox-label {
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+
+color: #757575;
+
+}
+.modal-link {
+  color:#2196f3;
+  text-decoration: underline;
+}
 /* Why-we */
 
 .why-we {
@@ -263,12 +329,23 @@ nav {
   padding-bottom: 94px;
 }
 .about-list-item {
+  position: relative;
+}
+.about-list-item:nth-child(2n) {
   margin-right: 30px;
   margin-left: 30px;
-   position: relative;
+  
 }
-.about-list-img {
- 
+.about-block {
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  top: 224px;
 }
 .about-list-subtitle {
   font-family: 'Roboto';
@@ -279,16 +356,20 @@ nav {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
-}
-.about-list-subtitle:first {
+  color: #ffffff;
   position: absolute;
-width: 182px;
-height: 16px;
+  top: 27px;
+  left: 100px;
+  
+}
+/* .about-list-subtitle: {
+  position: absolute;
+ width: 182px;
+height: 16px; 
 left: 309px;
 top: 1462px;
 
-}
+} */
 .about-title {
   font-weight: 700;
   font-size: 36px;
@@ -390,8 +471,8 @@ top: 1462px;
 .team-list-svg-item a {
   fill: #afb1b8;
   width: 44px;
-   height: 44px;
-   display: flex;
+  height: 44px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -494,7 +575,7 @@ top: 1462px;
 footer .container {
   padding-bottom: 63px;
   /* padding-right: 0; */
-  display:flex;
+  display: flex;
 }
 .footer-subtitle {
   font-family: 'Roboto';
@@ -527,8 +608,8 @@ footer .container {
 .footer-list-svg-link {
   fill: #fff;
   width: 44px;
-   height: 44px;
-   display: flex;
+  height: 44px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

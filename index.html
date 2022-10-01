@@ -72,31 +72,35 @@
       <!-- Modal -->
 
       <section class="modal-section">
-        <div class="modal-block">
+        <div class="modal-container">
           <h2 class="modal-title">Залиште свої дані, ми Вам зателефонуємо</h2>
           <ul class="modal-list">
           <li class="modal-list-item">
-            <p class="modal-list-text"></p>
-            <input type="text">
+            <label class="modal-list-label" for="name">Ім’я</label>
+            <input type="text" class="modal-input" id="name" name="user-name">
             <svg width="18" height="18" class="modal-svg">
               <use href="./images12/svg/modal.svg#icon-modal-person"></use>
             </svg>
             </li>
             <li class="modal-list-item">
-               <p class="modal-list-text"></p>
-               <input type="text">
+               <label class="modal-list-label" for="phone">Телефон</label>
+               <input type="text" class="modal-input" id="phone" name="user-phone">
                <svg width="18" height="18" class="modal-svg">
               <use href="./images12/svg/modal.svg#icon-modal-phone"></use>
             </svg>
             </li>
             <li class="modal-list-item">
-              <p class="modal-list-item"></p>
-              <input type="tel">
+              <label class="modal-list-label" for="mail">Пошта</label>
+              <input type="tel" class="modal-input" id="mail" name="user-mail">
               <svg width="18" height="18" class="modal-svg">
               <use href="./images12/svg/modal.svg#icon-modal-email"></use>
             </svg>
             </li>
           </ul>
+          <label class="modal-list-label" for="comment">Коментарі</label>
+          <textarea class="modal-textarea" id="comment" placeholder="Введите текст"></textarea>
+          <input  type="checkbox" class="modal-checkbox" id="accept">
+          <label for="accept" class="modal-checkbox-label">Погоджуюсь з розсилкою і приймаю <a class="modal-link" href="/">Умови договору</a></label>
         </div>
       </section>
 
@@ -144,13 +148,15 @@
         <div class="container">
           <h2 class="about-title">Чим ми займаємося</h2>
           <ul class="about-list">
-            <li>
+            <li class="about-list-item">
               <img
                 src="./images12/frontend.jpg"
                 alt="tablet"
                 class="about-list-img"
               />
+              <div class="about-block">
               <p class="about-list-subtitle">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
+              </div>
             </li>
             <li class="about-list-item">
               <img
@@ -158,15 +164,19 @@
                 alt="mobile"
                 class="about-list-img"
               />
+              <div class="about-block">
               <p class="about-list-subtitle">МОБІЛЬНІ ЗАСТОСУНКИ</p>
+              </div>
             </li>
-            <li>
+            <li class="about-list-item">
               <img
                 src="./images12/design.jpg"
                 alt="tablet"
                 class="about-list-img"
               />
+              <div class="about-block">
               <p class="about-list-subtitle">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+              </div>
             </li>
           </ul>
         </div>
