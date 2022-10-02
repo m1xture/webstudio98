@@ -195,69 +195,111 @@ nav {
 /* Modal  */
 
 .modal-section {
-  position: absolute;
+  /* position: absolute;
   width: 528px;
   height: 581px;
-  left: 536px;
-  
+  left: 536px; */
+  /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; // Скрываем фон и сам попап
+    pointer-events: none; // Запрещаем ему быть целью событий
+    transition: 0.5s all; */
 }
 .modal-title {
-  position: absolute;
-  top: 40px;
-  left: 40px;
+  margin-bottom: 12px;
 }
 .modal-container {
-  position: relative;
+  /* position: relative; */
+  padding-right: 40px;
+  padding-left: 40px;
 }
 .modal-list-item {
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 10px;
+  position: relative;
 }
 .modal-input {
   width: 448px;
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  
-
-
+  position: relative;
+  padding-left: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+.modal-input:active {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 .modal-svg {
   position: absolute;
-
+  left: 12px;
+  bottom: 11px;
+}
+.modal-svg:first-child {
 }
 .modal-list-label {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 14px;
-/* identical to box height */
-
-letter-spacing: 0.01em;
-
-color: #757575;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  display: block;
 }
 .modal-textarea {
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
+  height: 128px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  resize: none;
+  margin-bottom: 20px;
+  color: rgba(117, 117, 117, 0.5);
 }
 .modal-checkbox-label {
   font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-
-color: #757575;
-
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.modal-checkbox {
+  background: #212121;
+  width: 16px;
+  height: 15px;
+}
+.checkbox-block {
+  display: block;
 }
 .modal-link {
-  color:#2196f3;
+  color: #2196f3;
   text-decoration: underline;
+}
+.modal-button {
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
 }
 /* Why-we */
 
@@ -334,7 +376,6 @@ color: #757575;
 .about-list-item:nth-child(2n) {
   margin-right: 30px;
   margin-left: 30px;
-  
 }
 .about-block {
   background-image: linear-gradient(
@@ -360,7 +401,6 @@ color: #757575;
   position: absolute;
   top: 27px;
   left: 100px;
-  
 }
 /* .about-list-subtitle: {
   position: absolute;
