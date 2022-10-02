@@ -74,39 +74,82 @@
 
       <section class="modal-section">
         <form class="modal-form">
-        <div class="modal-container">
-          <h2 class="modal-title">Залиште свої дані, ми Вам зателефонуємо</h2>
-          <ul class="modal-list">
-          <li class="modal-list-item">
-            <label class="modal-list-label" for="name">Ім’я</label>
-            <input type="text" class="modal-input" id="name" name="user-name">
-            <svg width="18" height="18" class="modal-svg">
-              <use href="./images12/svg/modal.svg#icon-modal-person"></use>
-            </svg>
-            </li>
-            <li class="modal-list-item">
-               <label class="modal-list-label" for="phone">Телефон</label>
-               <input type="text" class="modal-input" id="phone" name="user-phone">
-               <svg width="18" height="18" class="modal-svg">
-              <use href="./images12/svg/modal.svg#icon-modal-phone"></use>
-            </svg>
-            </li>
-            <li class="modal-list-item">
-              <label class="modal-list-label" for="mail">Пошта</label>
-              <input type="tel" class="modal-input" id="mail" name="user-mail">
-              <svg width="18" height="18" class="modal-svg">
-              <use href="./images12/svg/modal.svg#icon-modal-email"></use>
-            </svg>
-            </li>
-          </ul>
-          <label class="modal-list-label" for="comment">Коментарі</label>
-          <textarea class="modal-textarea" id="comment" placeholder="Введите текст"></textarea>
-          <div class="checkbox-block">
-          <input  type="checkbox" class="modal-checkbox" id="accept">
-          <label for="accept" class="modal-checkbox-label">Погоджуюсь з розсилкою і приймаю <a class="modal-link" href="/">Умови договору</a></label>
+          
+          <div class="modal-container">
+            <svg
+            width="30"
+            height="30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="modal-close"
+          >
+            <circle cx="15" cy="15" r="15" fill="#fff" />
+            <circle
+              cx="15"
+              cy="15"
+              r="14.5"
+              stroke="#000"
+              stroke-opacity=".1"
+            />
+            <path
+              d="M21 10.1079 19.8921 9 15.5 13.3921 11.1079 9 10 10.1079 14.3921 14.5 10 18.8921 11.1079 20 15.5 15.6079 19.8921 20 21 18.8921 16.6079 14.5 21 10.1079Z"
+              fill="#000"
+            />
+          </svg>
+            <h2 class="modal-title">Залиште свої дані, ми Вам зателефонуємо</h2>
+            <ul class="modal-list">
+              <li class="modal-list-item">
+                <label class="modal-list-label" for="name">Ім’я</label>
+                <input
+                  type="text"
+                  class="modal-input"
+                  id="name"
+                  name="user-name"
+                />
+                <svg width="18" height="18" class="modal-svg">
+                  <use href="./images12/svg/modal.svg#icon-modal-person"></use>
+                </svg>
+              </li>
+              <li class="modal-list-item">
+                <label class="modal-list-label" for="phone">Телефон</label>
+                <input
+                  type="text"
+                  class="modal-input"
+                  id="phone"
+                  name="user-phone"
+                />
+                <svg width="18" height="18" class="modal-svg">
+                  <use href="./images12/svg/modal.svg#icon-modal-phone"></use>
+                </svg>
+              </li>
+              <li class="modal-list-item">
+                <label class="modal-list-label" for="mail">Пошта</label>
+                <input
+                  type="tel"
+                  class="modal-input"
+                  id="mail"
+                  name="user-mail"
+                />
+                <svg width="18" height="18" class="modal-svg">
+                  <use href="./images12/svg/modal.svg#icon-modal-email"></use>
+                </svg>
+              </li>
+            </ul>
+            <label class="modal-list-label" for="comment">Коментарі</label>
+            <textarea
+              class="modal-textarea"
+              id="comment"
+              placeholder="Введите текст"
+            ></textarea>
+            <div class="checkbox-block">
+              <input type="checkbox" class="modal-checkbox" id="accept" />
+              <label for="accept" class="modal-checkbox-label"
+                >Погоджуюсь з розсилкою і приймаю
+                <a class="modal-link" href="/">Умови договору</a></label
+              >
+            </div>
+            <button type="button" class="modal-button">Надіслати</button>
           </div>
-          <button type="button" сlass="modal-button">Надіслати</button>
-        </div>
         </form>
       </section>
 
@@ -161,7 +204,7 @@
                 class="about-list-img"
               />
               <div class="about-block">
-              <p class="about-list-subtitle">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
+                <p class="about-list-subtitle">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
               </div>
             </li>
             <li class="about-list-item">
@@ -171,7 +214,7 @@
                 class="about-list-img"
               />
               <div class="about-block">
-              <p class="about-list-subtitle">МОБІЛЬНІ ЗАСТОСУНКИ</p>
+                <p class="about-list-subtitle">МОБІЛЬНІ ЗАСТОСУНКИ</p>
               </div>
             </li>
             <li class="about-list-item">
@@ -181,7 +224,7 @@
                 class="about-list-img"
               />
               <div class="about-block">
-              <p class="about-list-subtitle">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+                <p class="about-list-subtitle">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
               </div>
             </li>
           </ul>
