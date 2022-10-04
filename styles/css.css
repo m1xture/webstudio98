@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto';
+  padding-top: 80px;
 }
 ul {
   list-style: none;
@@ -31,6 +32,15 @@ h3 {
 }
 p {
   margin: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 2;
+  border: bottom 1px solid #ECECEC;
 }
 .container {
   width: 1200px;
