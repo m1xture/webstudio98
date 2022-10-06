@@ -223,7 +223,6 @@ nav {
   top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%);
-  
   z-index: 2;
 }
 .modal-close {
@@ -231,6 +230,9 @@ nav {
   position: absolute;
   top: 8px;
   left: 490px;
+}
+.modal-close:hover {
+  fill:#2196f3;
 }
 .modal-title {
   margin-bottom: 12px;
@@ -267,16 +269,15 @@ letter-spacing: 0.03em;
   padding-top: 11px;
   padding-bottom: 11px;
 }
-.modal-input:focus {
+.modal-input:hover,:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
+  fill: #2196f3;
 }
 .modal-svg {
   position: absolute;
   left: 12px;
   bottom: 11px;
-}
-.modal-svg:first-child {
 }
 .modal-list-label {
   font-family: 'Roboto';
@@ -308,6 +309,10 @@ letter-spacing: 0.03em;
   resize: none;
   margin-bottom: 20px;
   color: rgba(117, 117, 117, 0.5);
+}
+.modal-textarea:hover {
+    border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 .modal-checkbox-label {
   font-family: 'Roboto';
