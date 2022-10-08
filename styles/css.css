@@ -225,13 +225,23 @@ nav {
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-.modal-close {
+.modal-close-btn {
   display: inline;
   position: absolute;
   top: 8px;
   left: 490px;
+  border: none;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
-.modal-close:hover {
+.modal-close-btn:hover {
   fill:#2196f3;
 }
 .modal-title {
@@ -278,6 +288,10 @@ letter-spacing: 0.03em;
   position: absolute;
   left: 12px;
   bottom: 11px;
+}
+
+.modal-input-svg-block:hover {
+  fill:#2196f3
 }
 .modal-list-label {
   font-family: 'Roboto';
