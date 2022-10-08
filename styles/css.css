@@ -202,7 +202,9 @@ nav {
 }
 
 /* Modal  */
-
+.backdrop {
+  z-index: 10;
+}
 .modal-section {
   position: fixed;
   top: 0;
@@ -216,8 +218,6 @@ nav {
   pointer-events: none;
 }
 .modal {
-  /* min-width: 400px;
-  height: 800px; */
   background-color:#fff;
   position: absolute;
   top: 50%;
@@ -226,11 +226,10 @@ nav {
   z-index: 2;
 }
 .modal-close-btn {
-  display: inline;
+  display: inline-block;
   position: absolute;
   top: 8px;
   left: 490px;
-  border: none;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -243,6 +242,8 @@ nav {
 }
 .modal-close-btn:hover {
   fill:#2196f3;
+  border-color:rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 .modal-title {
   margin-bottom: 12px;
@@ -464,6 +465,7 @@ letter-spacing: 0.03em;
   height: 70px;
   position: absolute;
   top: 224px;
+  z-index: 1;
 }
 .about-list-subtitle {
   font-family: 'Roboto';
