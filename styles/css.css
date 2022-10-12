@@ -112,13 +112,16 @@ nav {
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 /* .header-link:hover {
   color: #2196f3;
 } */
 .header-list-item {
   margin-left: 30px;
-
   color: #757575;
 }
 .header-link:hover {
@@ -242,7 +245,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 .modal-close-btn:hover {
   fill:#2196f3;
@@ -283,7 +289,12 @@ letter-spacing: 0.03em;
   padding-left: 42px;
   padding-top: 11px;
   padding-bottom: 11px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
+
 .modal-input:hover,:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
@@ -294,7 +305,12 @@ letter-spacing: 0.03em;
   left: 12px;
   bottom: 11px;
 }
-
+.modal-input-svg-block {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
+}
 .modal-input-svg-block:hover {
   fill:#2196f3
 }
@@ -328,6 +344,10 @@ letter-spacing: 0.03em;
   resize: none;
   margin-bottom: 20px;
   color: rgba(117, 117, 117, 0.5);
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 .modal-textarea:hover {
     border: 1px solid #2196f3;
@@ -341,17 +361,21 @@ letter-spacing: 0.03em;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-  
-
+  margin-left: 8.38px;
 }
 .modal-checkbox {
   background: #212121;
   width: 16px;
   height: 15px;
-  
 }
 .checkbox-block {
-  display: block;
+  /* display: block; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 12px;
+  
 }
 .modal-link {
   color: #2196f3;
@@ -597,6 +621,10 @@ top: 1462px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 
 .team-list-svg a:hover {
@@ -611,6 +639,10 @@ top: 1462px;
   background-color: #2196f3;
   justify-content: center;
   vertical-align: center;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 
 /* Clients */
@@ -644,6 +676,10 @@ top: 1462px;
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
+  transition-property: border fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 .clients-list-item:hover {
   fill: #2196f3;
@@ -726,6 +762,10 @@ footer .container {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 .footer-list-svg-link {
   fill: #fff;
