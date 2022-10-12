@@ -83,7 +83,10 @@ nav {
   letter-spacing: 0.02em;
   color: black;
   margin-right: 54px;
-
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 .nav-link:hover {
   color: #2196f3;
@@ -101,7 +104,10 @@ nav {
   letter-spacing: 0.02em;
    display: flex;
    align-items: center;
-   
+   transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 .header-link:hover {
   fill:#2196f3;
@@ -148,6 +154,10 @@ nav {
   padding-top:6px;
   padding-bottom:6px;
   border: 0;
+  transition-property: background-color color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 .filters-list {
   display: flex;
@@ -289,6 +299,10 @@ footer .container {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
 }
 .footer-list-svg-link {
   fill: #fff;
