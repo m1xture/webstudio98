@@ -87,6 +87,26 @@ nav {
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
   transition-delay: 50ms;
+  position: relative;
+}
+.nav-link::after {
+   content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #2196f3;
+    border-radius: 3px;
+    position: absolute;
+    top: 43px;
+    left: 0;
+     transition: opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 350ms,
+              transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: scaleX(0);
+}
+.nav-link:hover::after {
+  opacity: 1;
+  width: 100%;
+  transform: scaleX(1);
 }
 .nav-link:hover {
   color: #2196f3;
@@ -115,9 +135,27 @@ nav {
 }
 .header-list-item {
   margin-left: 30px;
-  /* display: flex; */
-  /* align-items: center; */
-  color:#757575
+  color:#757575;
+  position: relative;
+}
+.header-list-item::after {
+  content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #2196f3;
+    border-radius: 3px;
+    position: absolute;
+    top: 43px;
+    left: 0;
+     transition: opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 350ms,
+              transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: scaleX(0);
+}
+.header-list-item:hover::after {
+  opacity: 1;
+  width: 100%;
+  transform: scaleX(1);
 }
 .header-list-item:first-child {
   margin-left:0;
@@ -183,6 +221,35 @@ nav {
   border: 0.5px solid #EEEEEE;
   box-sizing: border-box;
   margin-bottom: 30px;
+}
+/* .card-overlay {
+  position: absolute ;
+  top: 0;
+  left: 0;
+  bottom:0 ;
+  right: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  opacity: 0;
+  transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1),
+  opacity 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
+  background-color 250ms cubic-bezier(0.755, 0.05, 0.855, 0.06); 
+}
+.card-overlay:hover {
+  top: 0;
+    left: 0;
+    bottom:0 ;
+    right: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translatey(0) ;
+    opacity: 0;
+} */
+.card-description {
+  overflow: hidden;
+  position: relative;
+}
+.card-description:hover {
+  opacity: 1;
 }
 .projects-list-item:nth-child(4n) {
   margin-left: 0;
