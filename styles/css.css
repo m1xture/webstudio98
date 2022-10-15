@@ -99,6 +99,20 @@ nav {
 }
 .nav-link:hover {
   color: #2196f3;
+  border: 0;
+}
+.active-page::after {
+   content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #2196f3;
+    border-radius: 3px;
+    position: absolute;
+    top: 43px;
+    left: 0;
+     transition: opacity 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 350ms,
+              transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .header-list {
   display: flex;
@@ -202,12 +216,15 @@ nav {
   margin-top: 30px;
   padding-left: 24px;
   border: 0;
+  transition: ;
 }
 
 /* Modal  */
-.backdrop {
+/* .backdrop {
   z-index: 10;
-}
+  transition: transform 3s cubic-bezier(0.165, 0.84, 0.44, 1) 350ms;
+  
+} */
 .modal-section {
   position: fixed;
   top: 0;
@@ -215,6 +232,7 @@ nav {
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms cubic-bezier(.23,.5,.83,.67);
 }
 .modal-section.is-hidden {
   opacity: 0;
@@ -227,6 +245,7 @@ nav {
   left: 50%; 
   transform: translate(-50%, -50%);
   z-index: 2;
+  border-radius: 1%;
 }
 .modal-close-btn {
   display: inline-block;
@@ -365,13 +384,10 @@ letter-spacing: 0.03em;
   height: 15px;
 }
 .checkbox-block {
-  /* display: block; */
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* justify-content: center; */
   padding-left: 12px;
-  
 }
 .modal-link {
   color: #2196f3;
@@ -403,6 +419,7 @@ letter-spacing: 0.03em;
   display: flex;
   justify-content: center;
 }
+
 /* Why-we */
 
 .why-we {
@@ -691,6 +708,7 @@ top: 1462px;
   background-color: #2f303a;
   padding-top: 60px;
   display: flex;
+  position: relative;
 }
 .footer-title {
   font-family: 'Raleway';
@@ -782,4 +800,53 @@ footer .container {
 }
 .footer-list-svg-link:hover {
   fill: #fff;
+}
+.footer-email {
+  margin-left: 93px;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  margin-top: 20px;
+}
+.footer-btn {
+  background: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  color:#fff ;
+  border: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  margin-left: 12px;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  top: 96px;
+}
+.button-svg {
+  position: absolute;
+  fill:#fff;
+  top: 13px;
+  left: 148px;
+}
+.email-text {
+  position: absolute;
+  top: 10px;
+  left: 28px;
 }
