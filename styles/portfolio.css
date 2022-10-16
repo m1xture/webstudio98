@@ -221,62 +221,41 @@ nav {
   border: 0.5px solid #EEEEEE;
   box-sizing: border-box;
   margin-bottom: 30px;
-}
-.card-overlay {
   position: relative;
   overflow: hidden;
 }
-.card-description {
+.product-block {
   position: absolute;
-    top: 0;
-    opacity: 0;
-    padding: 63px 24px 63px 24px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33,149,243,0.9);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom: 0;
-    margin: 0;
-    color: #fff;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-        transform: translateY(294px);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-        -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-/* .card-overlay {
-  position: absolute ;
+  width: 370px;
+  height: 294px;
   top: 0;
   left: 0;
-  bottom:0 ;
   right: 0;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translatey(100%);
   opacity: 0;
-  transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1),
-  opacity 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94),
-  background-color 250ms cubic-bezier(0.755, 0.05, 0.855, 0.06); 
+  transform: translateY(100%);
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  transition: transform 300ms cubic-bezier(.6,-0.02,.59,.88),
+    opacity 300ms cubic-bezier(.1,.54,.95,.6),
+    background-color 250ms cubic-bezier(.44,.32,.36,.69); 
 }
-.card-overlay:hover {
-  top: 0;
-    left: 0;
-    bottom:0 ;
-    right: 0;
-    background-color: rgba(33, 150, 243, 0.9);
-    transform: translatey(0) ;
-    opacity: 0;
-} */
 .card-description {
-  overflow: hidden;
-  position: relative;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
 }
-.card-description:hover {
+.projects-list-item:hover .product-block{
+  background: rgba(33, 150, 243, 0.9);
+  transform: translate(0);
+  color: #fff;
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
   opacity: 1;
 }
 .projects-list-item:nth-child(4n) {
