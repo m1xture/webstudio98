@@ -815,6 +815,14 @@ footer .container {
   padding-bottom: 15px;
   color: #fff;
   margin-top: 20px;
+  padding-left: 17.32px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
+}
+.footer-input:hover {
+  border:1px solid #2196F3;
 }
 .footer-btn {
   background: #2196F3;
