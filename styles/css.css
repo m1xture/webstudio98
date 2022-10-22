@@ -78,6 +78,9 @@ nav {
   transition-delay: 50ms;
   position: relative;
 }
+.nav--link:last-child {
+  
+}
 .nav--link::after {
    content: "";
     display: block;
