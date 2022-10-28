@@ -1,0 +1,190 @@
+.modal-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms cubic-bezier(.23,.5,.83,.67);
+}
+.modal-section.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  background-color:#fff;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-radius: 1%;
+}
+.modal-close-btn {
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  left: 490px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
+}
+.modal-close-btn:hover {
+  fill:#2196f3;
+  border-color:rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.modal-title {
+  margin-bottom: 12px;
+  /* display: flex; */
+  white-space: nowrap;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+}
+.modal-container {
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+}
+.modal-list-item {
+  margin-bottom: 10px;
+  position: relative;
+}
+.modal-input {
+  width: 448px;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  position: relative;
+  padding-left: 42px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
+}
+.modal-input:hover,:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+  fill: #2196f3;
+}
+.modal-svg {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+}
+.modal-input-svg-block {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
+}
+.modal-input-svg-block:hover {
+  fill:#2196f3
+}
+.modal-list-label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 4px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  display: block;
+}
+.modal-textarea {
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 128px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  resize: none;
+  margin-bottom: 20px;
+  color: rgba(117, 117, 117, 0.5);
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
+}
+.modal-textarea:hover {
+    border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+.modal-checkbox-label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 8.38px;
+}
+.modal-checkbox {
+  background: #212121;
+  width: 16px;
+  height: 15px;
+}
+.checkbox-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 12px;
+}
+.modal-link {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.modal-button {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin-top: 10px;
+  padding-left: 58px; 
+  margin-top: 30px;
+  
+}
+.modal-block-button {
+  display: flex;
+  justify-content: center;
+}

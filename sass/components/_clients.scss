@@ -1,0 +1,41 @@
+.clients__section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients--title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+}
+.clients__item {
+  width: 170px;
+  height: 90px;
+  margin-right: 30px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  transition-property: border fill;
+  transition-duration: 250ms;
+  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-delay: 50ms;
+}
+.clients__item:hover {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+.clients__item:last-child {
+  margin-right: 0;
+}
