@@ -84,7 +84,7 @@
   }
   &:hover {
     fill: #fff;
-    background-color: #2196f3;
+    background-color: $hover-color;
     justify-content: center;
     vertical-align: center;
     transition-property: background-color;

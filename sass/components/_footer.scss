@@ -9,7 +9,7 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196f3;
+    color: $hover-color;
     text-decoration: none;
     display: flex;
     width: 145px;
@@ -87,7 +87,7 @@ footer .container {
 }
 
 .footer__socials__item:hover {
-  background-color: #2196f3;
+  background-color: $hover-color;
   justify-content: center;
   vertical-align: center;
 }
@@ -115,10 +115,10 @@ footer .container {
   transition-delay: 50ms;
 }
 .footer--input:hover {
-  border: 1px solid #2196f3;
+  border: 1px solid $hover-color;
 }
 .footer--btn {
-  background: #2196f3;
+  background: $hover-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;

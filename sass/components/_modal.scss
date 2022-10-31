@@ -39,7 +39,7 @@
   transition-delay: 50ms;
 }
 .modal-close-btn:hover {
-  fill:#2196f3;
+  fill:$hover-color;
   border-color:rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
@@ -80,9 +80,9 @@ letter-spacing: 0.03em;
   transition-delay: 50ms;
 }
 .modal-input:hover,:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid $hover-color;
   border-radius: 4px;
-  fill: #2196f3;
+  fill: $hover-color;
 }
 .modal-svg {
   position: absolute;
@@ -96,7 +96,7 @@ letter-spacing: 0.03em;
   transition-delay: 50ms;
 }
 .modal-input-svg-block:hover {
-  fill:#2196f3
+  fill:$hover-color
 }
 .modal-list-label {
   font-family: 'Roboto';
@@ -134,7 +134,7 @@ letter-spacing: 0.03em;
   transition-delay: 50ms;
 }
 .modal-textarea:hover {
-    border: 1px solid #2196f3;
+    border: 1px solid $hover-color;
   border-radius: 4px;
 }
 .modal-checkbox-label {
@@ -159,11 +159,11 @@ letter-spacing: 0.03em;
   padding-left: 12px;
 }
 .modal-link {
-  color: #2196f3;
+  color: $hover-color;
   text-decoration: underline;
 }
 .modal-button {
-  background: #2196f3;
+  background: $hover-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
