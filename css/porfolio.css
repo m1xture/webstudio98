@@ -258,7 +258,7 @@ nav {
   letter-spacing: 0.03em;
   color: #212121;
   border-radius: 4px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   margin-right: 8px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -272,6 +272,12 @@ nav {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
+.filters--button:hover {
+  color: white;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: #2196f3;
+}
 
 .filters__list {
   display: -webkit-box;
@@ -281,13 +287,6 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 56px;
-}
-
-.filters--button:hover {
-  background-color: #2196F3;
-  color: white;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Projects */
@@ -306,18 +305,44 @@ nav {
 .projects__item {
   width: 370px;
   margin-left: 30px;
-  background: #FFFFFF;
-  border: 0.5px solid #EEEEEE;
+  background: #ffffff;
+  border: 0.5px solid #eeeeee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
 }
-
 .projects__item:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.projects__item:hover .item__block {
+  background: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  color: #fff;
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  opacity: 1;
+}
+.projects__item:nth-child(4n) {
+  margin-left: 0;
+}
+.projects__item:first-child {
+  margin-left: 0;
+}
+.projects__item:nth-child(7) {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.projects__item:nth-child(8) {
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+.projects__item:nth-child(9) {
+  margin-bottom: 0;
 }
 
 .item__block {
@@ -346,43 +371,10 @@ nav {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.projects__item:hover .item__block {
-  background: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  color: #fff;
-  padding-top: 63px;
-  padding-left: 24px;
-  padding-right: 24px;
-  opacity: 1;
-}
-
-.projects__item:nth-child(4n) {
-  margin-left: 0;
-}
-
-.projects__item:first-child {
-  margin-left: 0;
-}
-
-.projects__item:nth-child(7) {
-  margin-left: 0;
-  margin-bottom: 0;
-}
-
-.projects__item:nth-child(8) {
-  margin-left: 30px;
-  margin-bottom: 0;
-}
-
-.projects__item:nth-child(9) {
-  margin-bottom: 0;
-}
-
-.card--title {
+.projects__item .card--title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -415,7 +407,6 @@ nav {
   display: flex;
   position: relative;
 }
-
 .footer--title {
   font-family: "Raleway";
   font-weight: 700;
@@ -430,9 +421,21 @@ nav {
   width: 145px;
   display: flex;
 }
-
 .footer--white-title {
+  color: #fff;
+}
+.footer--subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .address {
@@ -462,20 +465,6 @@ nav {
 
 footer .container {
   padding-bottom: 63px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer--subtitle {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -576,11 +565,11 @@ footer .container {
 }
 
 .footer--input:hover {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
 }
 
 .footer--btn {
-  background: #2196F3;
+  background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -594,7 +583,7 @@ footer .container {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 12px;
   position: relative;
   cursor: pointer;

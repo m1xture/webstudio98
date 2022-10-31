@@ -1,24 +1,34 @@
-
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   display: flex;
   position: relative;
-}
-.footer--title {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
-  text-decoration: none;
-  display: flex;
-  width: 145px;
-  display: flex;
-}
-.footer--white-title {
-  color: #ffffff;
+  &--title {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+    text-decoration: none;
+    display: flex;
+    width: 145px;
+    display: flex;
+  }
+  &--white-title {
+    color: #fff;
+  }
+  &--subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: flex;
+  }
 }
 .address {
   font-weight: 400;
@@ -43,17 +53,6 @@ footer .container {
   padding-bottom: 63px;
   display: flex;
 }
-.footer--subtitle {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  display: flex;
-}
 .footer__socials {
   margin-left: 70px;
 }
@@ -72,7 +71,7 @@ footer .container {
   background: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
 }
 .footer__socials--link {
@@ -112,19 +111,19 @@ footer .container {
   padding-left: 17.32px;
   transition-property: border;
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
 }
 .footer--input:hover {
-  border:1px solid #2196F3;
+  border: 1px solid #2196f3;
 }
 .footer--btn {
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  color:#fff ;
+  color: #fff;
   border: 0;
   font-family: 'Roboto';
   font-style: normal;
@@ -132,7 +131,7 @@ footer .container {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 12px;
   position: relative;
   cursor: pointer;
@@ -143,7 +142,7 @@ footer .container {
 }
 .footer--button--pic {
   position: absolute;
-  fill:#fff;
+  fill: #fff;
   top: 13px;
   left: 148px;
 }

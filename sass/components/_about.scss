@@ -8,10 +8,10 @@
 }
 .about__item {
   position: relative;
-}
-.about__item:nth-child(2n) {
-  margin-right: 30px;
-  margin-left: 30px;
+  &:nth-child(2n) {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 .about__block {
   background-image: linear-gradient(

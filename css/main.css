@@ -259,7 +259,6 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .hero--title {
   width: 696px;
   font-weight: 900;
@@ -273,7 +272,6 @@ nav {
       flex-wrap: wrap;
   padding-top: 200px;
 }
-
 .hero--button {
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -302,7 +300,6 @@ nav {
 .why-we {
   padding-top: 94px;
 }
-
 .why-we__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -313,6 +310,10 @@ nav {
   margin-top: 30px;
 }
 
+.why-we__item {
+  width: 270px;
+  margin-left: 30px;
+}
 .why-we__item::before {
   content: "";
   height: 120px;
@@ -324,28 +325,18 @@ nav {
   background-position: center;
   margin-bottom: 30px;
 }
-
-.why-we__item {
-  width: 270px;
-  margin-left: 30px;
-}
-
 .why-we__item:first-child::before {
   background-image: url(../images12/antenna.png);
 }
-
 .why-we__item:first-child {
   margin-left: 0;
 }
-
 .why-we__item:nth-child(2)::before {
   background-image: url(../images12/clock.png);
 }
-
 .why-we__item:nth-child(3)::before {
   background-image: url(../images12/diagram.png);
 }
-
 .why-we__item:last-child::before {
   background-image: url(../images12/astronaut.png);
 }
@@ -640,7 +631,6 @@ nav {
 .about__item {
   position: relative;
 }
-
 .about__item:nth-child(2n) {
   margin-right: 30px;
   margin-left: 30px;
@@ -693,7 +683,6 @@ nav {
   margin-right: auto;
   margin-left: auto;
 }
-
 .team--title {
   font-weight: 700;
   font-size: 36px;
@@ -713,6 +702,9 @@ nav {
           justify-content: center;
   padding-bottom: 94px;
 }
+.team__list:first-child {
+  margin-left: 0;
+}
 
 .team__item {
   width: 270px;
@@ -723,7 +715,6 @@ nav {
   margin-left: 30px;
   padding-bottom: 30px;
 }
-
 .team__item:first-child {
   margin-left: 0;
 }
@@ -766,10 +757,6 @@ nav {
   padding-bottom: 28px;
 }
 
-.team__list:first-child {
-  margin-left: 0;
-}
-
 .team__socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -792,6 +779,25 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.team__socials__item:last-child {
+  margin-right: 0px;
+}
+.team__socials__item:hover {
+  fill: #fff;
+  background-color: #2196f3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: center;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
+          transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
 }
 
 .team__socials__item a {
@@ -816,30 +822,8 @@ nav {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-
-.team__socials a:hover {
+.team__socials__item a:hover {
   fill: #fff;
-}
-
-.team__socials__item:last-child {
-  margin-right: 0px;
-}
-
-.team__socials__item:hover {
-  fill: #fff;
-  background-color: #2196f3;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  vertical-align: center;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
-          transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
-  -webkit-transition-delay: 50ms;
-          transition-delay: 50ms;
 }
 
 .clients__section {
@@ -890,12 +874,10 @@ nav {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-
 .clients__item:hover {
   fill: #2196f3;
   border-color: #2196f3;
 }
-
 .clients__item:last-child {
   margin-right: 0;
 }
@@ -908,7 +890,6 @@ nav {
   display: flex;
   position: relative;
 }
-
 .footer--title {
   font-family: "Raleway";
   font-weight: 700;
@@ -923,9 +904,21 @@ nav {
   width: 145px;
   display: flex;
 }
-
 .footer--white-title {
+  color: #fff;
+}
+.footer--subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .address {
@@ -955,20 +948,6 @@ nav {
 
 footer .container {
   padding-bottom: 63px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.footer--subtitle {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1069,11 +1048,11 @@ footer .container {
 }
 
 .footer--input:hover {
-  border: 1px solid #2196F3;
+  border: 1px solid #2196f3;
 }
 
 .footer--btn {
-  background: #2196F3;
+  background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1087,7 +1066,7 @@ footer .container {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-left: 12px;
   position: relative;
   cursor: pointer;

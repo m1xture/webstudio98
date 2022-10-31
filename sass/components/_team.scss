@@ -8,20 +8,24 @@
   align-content: center;
   margin-right: auto;
   margin-left: auto;
+  &--title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+  }
 }
-.team--title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-}
+
 .team__list {
   display: flex;
   justify-content: center;
   padding-bottom: 94px;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .team__item {
@@ -32,9 +36,9 @@
   border-radius: 0px 0px 4px 4px;
   margin-left: 30px;
   padding-bottom: 30px;
-}
-.team__item:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 .team--subtitle {
   font-weight: 500;
@@ -62,9 +66,6 @@
   margin-top: 10px;
   padding-bottom: 28px;
 }
-.team__list:first-child {
-  margin-left: 0;
-}
 .team__socials {
   display: flex;
   padding-right: 32px;
@@ -78,6 +79,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:last-child {
+    margin-right: 0px;
+  }
+  &:hover {
+    fill: #fff;
+    background-color: #2196f3;
+    justify-content: center;
+    vertical-align: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
+    transition-delay: 50ms;
+  }
 }
 .team__socials__item a {
   fill: #afb1b8;
@@ -88,24 +102,9 @@
   align-items: center;
   transition-property: fill;
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
-}
-
-.team__socials a:hover {
-  fill: #fff;
-}
-.team__socials__item:last-child {
-  margin-right: 0px;
-}
-
-.team__socials__item:hover {
-  fill: #fff;
-  background-color: #2196f3;
-  justify-content: center;
-  vertical-align: center;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
-  transition-delay: 50ms;
+  &:hover {
+    fill: #fff;
+  }
 }
