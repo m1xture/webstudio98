@@ -30,9 +30,7 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
@@ -45,7 +43,6 @@
 }
 .modal-title {
   margin-bottom: 12px;
-  /* display: flex; */
   white-space: nowrap;
   font-family: 'Roboto';
 font-style: normal;
@@ -148,7 +145,7 @@ letter-spacing: 0.03em;
   margin-left: 8.38px;
 }
 .modal-checkbox {
-  background: #212121;
+  background: $text-color;
   width: 16px;
   height: 15px;
 }

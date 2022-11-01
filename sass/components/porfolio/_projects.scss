@@ -11,7 +11,7 @@
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: $text-color;
   border-radius: 4px;
   background-color: #f5f4fa;
   margin-right: 8px;
@@ -116,7 +116,7 @@
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: $text-color;
   margin-top: 20px;
   padding-left: 24px;
 }
