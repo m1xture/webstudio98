@@ -3,20 +3,6 @@
   padding-top: 60px;
   display: flex;
   position: relative;
-  &--title {
-    // font-family: 'Raleway';
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: 1.19;
-    // letter-spacing: 0.03em;
-    // color: $hover-color;
-    // @include logo ()
-    // text-decoration: none;
-    // display: flex;
-  }
-  // &--white-title {
-  //   color: #fff;
-  // }
   &--subtitle {
     font-family: 'Roboto';
     font-style: normal;
@@ -28,6 +14,9 @@
     color: #ffffff;
     display: flex;
   }
+}
+.footer__logo {
+  @include logo(#fff);
 }
 .address {
   font-weight: 400;

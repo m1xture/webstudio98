@@ -14,21 +14,12 @@ header .container {
 nav {
   display: flex;
 }
-.header--logo {
-  // display: flex;
-  // font-family: 'Raleway';
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
-  // color: $hover-color;
-  // text-decoration: none;
-  // @extend %logo-fonts;
-  // @include 
+.header__logo {
+   @include logo(black);
+   padding-top: 24px;
 }
-.black--logo {
-  color: black;
-  display: flex;
+.blue--logo {
+  color: $hover-color;
 }
 nav {
   display: flex;
@@ -81,10 +72,6 @@ nav {
     border: 0;
   }
 }
-// .nav--link:hover {
-//   color: $hover-color;
-//   border: 0;
-// }
 .active-page::after {
    content: "";
     display: block;

@@ -75,11 +75,22 @@ nav {
   display: flex;
 }
 
-.black--logo {
+.header__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: black;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 24px;
+}
+
+.blue--logo {
+  color: #2196f3;
 }
 
 nav {
@@ -886,6 +897,19 @@ nav {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #fff;
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
