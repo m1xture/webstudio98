@@ -37,7 +37,7 @@
   display: flex;
   margin-top: 9px;
 }
-footer .container {
+.footer .container {
   padding-bottom: 63px;
   display: flex;
 }
@@ -70,7 +70,7 @@ footer .container {
     vertical-align: center;
   }
 }
-.footer-socials--link {
+.footer-socials__link {
   fill: #fff;
   width: 44px;
   height: 44px;
@@ -90,7 +90,7 @@ footer .container {
 .footer__mailing {
   margin-left: 93px;
 }
-.footer--input {
+.footer__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -110,7 +110,7 @@ footer .container {
     border: 1px solid $hover-color;
   }
 }
-.footer--btn {
+.footer__btn {
   background: $hover-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -133,13 +133,13 @@ footer .container {
   position: absolute;
   top: 96px;
 }
-.footer--button--pic {
+.footer__button__pic {
   position: absolute;
   fill: #fff;
   top: 13px;
   left: 148px;
 }
-.footer--button__text {
+.footer__button__text {
   position: absolute;
   top: 10px;
   left: 28px;

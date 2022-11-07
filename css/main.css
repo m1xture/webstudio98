@@ -1,4 +1,4 @@
-.modal-close-btn {
+.modal__close-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,7 +395,7 @@ body {
   border-radius: 1%;
 }
 
-.modal-close-btn {
+.modal__close-btn {
   display: inline-block;
   position: absolute;
   top: 12px;
@@ -414,14 +414,13 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-
-.modal-close-btn:hover {
+.modal__close-btn:hover {
   fill: #2196f3;
   border-color: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
 
-.modal-title {
+.modal__title {
   margin-bottom: 12px;
   white-space: nowrap;
   font-family: "Roboto";
@@ -440,12 +439,12 @@ body {
   padding-left: 40px;
 }
 
-.modal-list-item {
+.modal__list__item {
   margin-bottom: 10px;
   position: relative;
 }
 
-.modal-input {
+.modal__input {
   width: 448px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -464,20 +463,19 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-
-.modal-input:hover, :focus {
+.modal__input:hover, .modal__input :focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
   fill: #2196f3;
 }
 
-.modal-svg {
+.modal__svg {
   position: absolute;
   left: 12px;
   bottom: 11px;
 }
 
-.modal-input-svg-block {
+.modal__input__svg-block {
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -487,12 +485,11 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-
-.modal-input-svg-block:hover {
+.modal__input__svg-block:hover {
   fill: #2196f3;
 }
 
-.modal-list-label {
+.modal__list__label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -504,7 +501,7 @@ body {
   display: block;
 }
 
-.modal-textarea {
+.modal__textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -533,13 +530,12 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-
-.modal-textarea:hover {
+.modal__textarea:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
 
-.modal-checkbox-label {
+.modal__checkbox__label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -550,7 +546,7 @@ body {
   margin-left: 8.38px;
 }
 
-.modal-checkbox {
+.modal__checkbox {
   background: #212121;
   width: 16px;
   height: 15px;
@@ -570,12 +566,12 @@ body {
   padding-left: 12px;
 }
 
-.modal-link {
+.modal__link {
   color: #2196f3;
   text-decoration: underline;
 }
 
-.modal-button {
+.modal__button {
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -596,7 +592,7 @@ body {
           align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: #fff;
   margin-top: 10px;
   padding-left: 58px;
   margin-top: 30px;
@@ -939,7 +935,7 @@ body {
   margin-top: 9px;
 }
 
-footer .container {
+.footer .container {
   padding-bottom: 63px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -992,7 +988,7 @@ footer .container {
   vertical-align: center;
 }
 
-.footer-socials--link {
+.footer-socials__link {
   fill: #fff;
   width: 44px;
   height: 44px;
@@ -1011,7 +1007,7 @@ footer .container {
   margin-left: 93px;
 }
 
-.footer--input {
+.footer__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1033,11 +1029,11 @@ footer .container {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-.footer--input:hover {
+.footer__input:hover {
   border: 1px solid #2196f3;
 }
 
-.footer--btn {
+.footer__btn {
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1066,14 +1062,14 @@ footer .container {
   top: 96px;
 }
 
-.footer--button--pic {
+.footer__button__pic {
   position: absolute;
   fill: #fff;
   top: 13px;
   left: 148px;
 }
 
-.footer--button__text {
+.footer__button__text {
   position: absolute;
   top: 10px;
   left: 28px;

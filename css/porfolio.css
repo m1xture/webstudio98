@@ -454,7 +454,7 @@ body {
   margin-top: 9px;
 }
 
-footer .container {
+.footer .container {
   padding-bottom: 63px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,7 +507,7 @@ footer .container {
   vertical-align: center;
 }
 
-.footer-socials--link {
+.footer-socials__link {
   fill: #fff;
   width: 44px;
   height: 44px;
@@ -526,7 +526,7 @@ footer .container {
   margin-left: 93px;
 }
 
-.footer--input {
+.footer__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -548,11 +548,11 @@ footer .container {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-.footer--input:hover {
+.footer__input:hover {
   border: 1px solid #2196f3;
 }
 
-.footer--btn {
+.footer__btn {
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -581,14 +581,14 @@ footer .container {
   top: 96px;
 }
 
-.footer--button--pic {
+.footer__button__pic {
   position: absolute;
   fill: #fff;
   top: 13px;
   left: 148px;
 }
 
-.footer--button__text {
+.footer__button__text {
   position: absolute;
   top: 10px;
   left: 28px;
