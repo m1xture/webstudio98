@@ -1,4 +1,4 @@
-.about__section {
+.about {
   padding-top: 94px;
 }
 .about__list {
@@ -13,7 +13,7 @@
     margin-left: 30px;
   }
 }
-.about__block {
+.about-block {
   background-image: linear-gradient(
     to right,
     rgba(47, 48, 58, 0.8),
@@ -24,7 +24,7 @@
   position: absolute;
   top: 224px;
 }
-.about--subtitle {
+.about__subtitle {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -38,7 +38,7 @@
   top: 27px;
   left: 100px;
 }
-.about--title {
+.about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;

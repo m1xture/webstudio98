@@ -13,7 +13,7 @@
     url(../images12/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  &--title {
+  &__title {
     width: 696px;
     font-weight: 900;
     font-size: 44px;
@@ -25,7 +25,7 @@
     flex-wrap: wrap;
     padding-top: 200px;
   }
-  &--button {
+  &__button {
     background: #2196f3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;

@@ -1,17 +1,17 @@
-header {
+.header {
   display: flex;
   height: 80px;
   border-bottom: 1px solid #ECECEC;
 }
-header .header--logo {
+.header .header--logo {
   align-items: center;
   padding-bottom: 24px;
   padding-top: 25px;
 }
-header .container {
+.header .container {
   display: flex;
 }
-nav {
+.nav {
   display: flex;
 }
 .header__logo {
@@ -21,21 +21,15 @@ nav {
 .blue--logo {
   color: $hover-color;
 }
-nav {
+.nav {
   display: flex;
-    // &__list {
-    //    display: flex;
-    //     justify-content: center;
-    //     margin-left: 93px;
-    //     align-items: center;
-    // }
+    &__list {
+       display: flex;
+        justify-content: center;
+        margin-left: 93px;
+        align-items: center;
+    }
 }
-.nav__list {
-  display: flex;
-  justify-content: center;
-  margin-left: 93px;
-  align-items: center;
- }
 .nav--link {
   font-weight: 500;
   font-size: 14px;

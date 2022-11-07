@@ -3,7 +3,7 @@
   padding-top: 60px;
   display: flex;
   position: relative;
-  &--subtitle {
+  &__subtitle {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -41,14 +41,14 @@ footer .container {
   padding-bottom: 63px;
   display: flex;
 }
-.footer__socials {
+.footer-socials {
   margin-left: 70px;
 }
-.footer__socials__list {
+.footer-socials__list {
   display: flex;
   margin-top: 20px;
 }
-.footer__socials__item {
+.footer-socials__item {
   margin-right: 10px;
   width: 44px;
   height: 44px;
@@ -61,8 +61,16 @@ footer .container {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    background-color: $hover-color;
+    justify-content: center;
+    vertical-align: center;
+  }
 }
-.footer__socials--link {
+.footer-socials--link {
   fill: #fff;
   width: 44px;
   height: 44px;
@@ -70,18 +78,15 @@ footer .container {
   justify-content: center;
   align-items: center;
 }
-.footer__socials__item:last-child {
-  margin-right: 0px;
-}
+// .footer-socials__item:last-child {
+//   margin-right: 0px;
+// }
 
-.footer__socials__item:hover {
-  background-color: $hover-color;
-  justify-content: center;
-  vertical-align: center;
-}
-.footer__socials--link:hover {
-  fill: #fff;
-}
+// .footer-socials__item:hover {
+//   background-color: $hover-color;
+//   justify-content: center;
+//   vertical-align: center;
+// }
 .footer__mailing {
   margin-left: 93px;
 }
@@ -101,9 +106,9 @@ footer .container {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
-}
-.footer--input:hover {
-  border: 1px solid $hover-color;
+  &:hover {
+    border: 1px solid $hover-color;
+  }
 }
 .footer--btn {
   background: $hover-color;

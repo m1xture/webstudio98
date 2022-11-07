@@ -21,9 +21,9 @@
   <body>
     <!-- Header -->
 
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
+        <nav class="nav">
           <a href="/" class="header__logo"><span class="blue--logo">Web</span>Studio</a> 
           <ul class="nav__list">
             <li class="nav__item">
@@ -65,8 +65,8 @@
       <!-- Герой -->
 
       <section class="hero">
-        <h1 class="hero--title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="hero--button" data-open-modal>Замовити послугу</button>
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button type="button" class="hero__button" data-open-modal>Замовити послугу</button>
       </section>
 
      
@@ -78,29 +78,29 @@
           <h2 hidden>Чому ми?</h2>
           <ul class="why-we__list">
             <li class="why-we__item">
-              <h3 class="why-we--subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="why-we--text">
+              <h3 class="why-we__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="why-we__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem veritatis exercitationem velit magnam iure.
               </p>
             </li>
             <li class="why-we__item">
-              <h3 class="why-we--subtitle">Пунктуальність</h3>
-              <p class="why-we--text">
+              <h3 class="why-we__subtitle">Пунктуальність</h3>
+              <p class="why-we__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem veritatis exercitationem velit magnam iure.
               </p>
             </li>
             <li class="why-we__item">
-              <h3 class="why-we--subtitle">ПЛАНУВАННЯ</h3>
-              <p class="why-we--text">
+              <h3 class="why-we__subtitle">ПЛАНУВАННЯ</h3>
+              <p class="why-we__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem veritatis exercitationem velit magnam iure.
               </p>
             </li>
             <li class="why-we__item">
-              <h3 class="why-we--subtitle">Сучасні технології</h3>
-              <p class="why-we--text">
+              <h3 class="why-we__subtitle">Сучасні технології</h3>
+              <p class="why-we__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Voluptatem veritatis exercitationem velit magnam iure.
               </p>
@@ -111,18 +111,18 @@
 
       <!-- Чим ми займаємося? -->
 
-      <section class="about__section">
+      <section class="about">
         <div class="container">
-          <h2 class="about--title">Чим ми займаємося</h2>
+          <h2 class="about__title">Чим ми займаємося</h2>
           <ul class="about__list">
             <li class="about__item">
               <img
                 src="./images12/frontend.jpg"
                 alt="tablet"
-                class="about--img"
+                class="about__img"
               />
-              <div class="about__block">
-                <p class="about--subtitle">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
+              <div class="about-block">
+                <p class="about__subtitle">ДЕСКТОПНІ ЗАСТОСУНКИ</p>
               </div>
             </li>
             <li class="about__item">
@@ -131,8 +131,8 @@
                 alt="mobile"
                 class="about--img"
               />
-              <div class="about__block">
-                <p class="about--subtitle">МОБІЛЬНІ ЗАСТОСУНКИ</p>
+              <div class="about-block">
+                <p class="about__subtitle">МОБІЛЬНІ ЗАСТОСУНКИ</p>
               </div>
             </li>
             <li class="about__item">
@@ -141,8 +141,8 @@
                 alt="tablet"
                 class="about--img"
               />
-              <div class="about__block">
-                <p class="about--subtitle">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+              <div class="about-block">
+                <p class="about__subtitle">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
               </div>
             </li>
           </ul>
@@ -153,7 +153,7 @@
 
       <section class="team">
         <div class="container">
-          <h2 class="team--title">Наша команда</h2>
+          <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <img
@@ -161,19 +161,19 @@
                 alt="Igor"
                 style="height: 260px; width: 270px"
               />
-              <h3 class="team--subtitle">Ігор Дем’яненко</h3>
-              <p class="team--text">Product Designer</p>
-              <ul class="team__socials">
-                <li class="team__socials__item">
+              <h3 class="team__subtitle">Ігор Дем’яненко</h3>
+              <p class="team__text">Product Designer</p>
+              <ul class="team-socials">
+                <li class="team-socials__item">
                   <a href="https://www.instagram.com/">
-                    <svg width="20px" height="20px" class="team__socials-pic">
+                    <svg width="20px" height="20px">
                       <use
                         href="./images12/svg/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://twitter.com/?lang=ru">
                     <svg width="20px" height="20px">
                       <use
@@ -182,7 +182,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://uk-ua.facebook.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -191,7 +191,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://ua.linkedin.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -208,10 +208,10 @@
                 alt="Olga"
                 style="height: 260px; width: 270px"
               />
-              <h3 class="team--subtitle">Ольга Репіна</h3>
-              <p class="team--text">Frontend Developer</p>
-              <ul class="team__socials">
-                <li class="team__socials__item">
+              <h3 class="team__subtitle">Ольга Репіна</h3>
+              <p class="team__text">Frontend Developer</p>
+              <ul class="team-socials">
+                <li class="team-socials__item">
                   <a href="https://www.instagram.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -220,7 +220,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://twitter.com/?lang=ru">
                     <svg width="20px" height="20px">
                       <use
@@ -229,7 +229,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://uk-ua.facebook.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -238,7 +238,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://ua.linkedin.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -255,10 +255,10 @@
                 alt="Kolya"
                 style="height: 260px; width: 270px"
               />
-              <h3 class="team--subtitle">Микола Тарасов</h3>
-              <p class="team--text">Marketing</p>
-              <ul class="team__socials">
-                <li class="team__socials__item">
+              <h3 class="team__subtitle">Микола Тарасов</h3>
+              <p class="team__text">Marketing</p>
+              <ul class="team-socials">
+                <li class="team-socials__item">
                   <a href="https://www.instagram.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -267,7 +267,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://twitter.com/?lang=ru">
                     <svg width="20px" height="20px">
                       <use
@@ -276,7 +276,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://uk-ua.facebook.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -285,7 +285,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://ua.linkedin.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -302,10 +302,10 @@
                 alt="Michael"
                 style="height: 260px; width: 270px"
               />
-              <h3 class="team--subtitle">Михайло Єрмаков</h3>
-              <p class="team--text">UI Designer</p>
-              <ul class="team__socials">
-                <li class="team__socials__item">
+              <h3 class="team__subtitle">Михайло Єрмаков</h3>
+              <p class="team__text">UI Designer</p>
+              <ul class="team-socials">
+                <li class="team-socials__item">
                   <a href="https://www.instagram.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -314,7 +314,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://twitter.com/?lang=ru">
                     <svg width="20px" height="20px">
                       <use
@@ -323,7 +323,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://uk-ua.facebook.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -332,7 +332,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__socials__item">
+                <li class="team-socials__item">
                   <a href="https://ua.linkedin.com/">
                     <svg width="20px" height="20px">
                       <use
@@ -349,9 +349,9 @@
 
       <!-- Clients -->
 
-      <section class="clients__section">
+      <section class="clients">
         <div class="container">
-          <h2 class="clients--title">Постійні клієнти</h2>
+          <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list">
             <li class="clients__item">
               <svg width="44.27px" height="41.23px">
@@ -392,7 +392,7 @@
 
     <footer id="footer" class="footer">
       <div class="container">
-        <div class="footer__contacts">
+        <div class="footer-contacts">
           <a href="/" class="footer__logo"><span class="blue--logo">Web</span>Studio</a>
           <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
           <a href="mailto:info@example.com" class="connection"
@@ -401,11 +401,11 @@
           <a href="tel:+380991111111" class="connection">+380991111111</a>
         </div>
 
-        <div class="footer__socials">
-          <h3 class="footer--subtitle">Приєднуйтесь</h3>
-          <ul class="footer__socials__list">
-            <li class="footer__socials__item">
-              <a href="https://www.instagram.com/" class="footer__socials--link">
+        <div class="footer-socials">
+          <h3 class="footer__subtitle">Приєднуйтесь</h3>
+          <ul class="footer-socials__list">
+            <li class="footer-socials__item">
+              <a href="https://www.instagram.com/" class="footer-socials--link">
                 <svg width="20px" height="20px">
                   <use
                     href="./images12/svg/symbol-defs.svg#icon-instagram"
@@ -413,20 +413,20 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__socials__item">
+            <li class="footer-socials__item">
               <a
                 href="https://twitter.com/?lang=ru"
-                class="footer__socials--link"
+                class="footer-socials--link"
               >
                 <svg width="20px" height="20px">
                   <use href="./images12/svg/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__socials__item">
+            <li class="footer-socials__item">
               <a
                 href="https://uk-ua.facebook.com/"
-                class="footer__socials--link"
+                class="footer-socials--link"
               >
                 <svg width="20px" height="20px">
                   <use
@@ -435,8 +435,8 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__socials__item">
-              <a href="https://ua.linkedin.com/" class="footer__socials--link">
+            <li class="footer-socials__item">
+              <a href="https://ua.linkedin.com/" class="footer-socials--link">
                 <svg width="20px" height="20px">
                   <use
                     href="./images12/svg/symbol-defs.svg#icon-linkedin"
@@ -447,7 +447,7 @@
           </ul>
         </div>
         <div class="footer__mailing">
-          <h3 class="footer--subtitle">Підпишіться на розсилку</h3>
+          <h3 class="footer__subtitle">Підпишіться на розсилку</h3>
           <input type="text" placeholder="E-mail" class="footer--input">
           <button type="button" class="footer--btn"><svg width="24" height="24" class="footer--button--pic">
             <use href="./images12/svg/telegram.svg#telegram"></use>

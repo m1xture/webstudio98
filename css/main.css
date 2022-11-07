@@ -47,7 +47,7 @@ body {
   margin-left: auto;
 }
 
-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,7 +55,7 @@ header {
   border-bottom: 1px solid #ECECEC;
 }
 
-header .header--logo {
+.header .header--logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -63,13 +63,13 @@ header .header--logo {
   padding-top: 25px;
 }
 
-header .container {
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-nav {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,12 +93,11 @@ nav {
   color: #2196f3;
 }
 
-nav {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,7 +266,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero--title {
+.hero__title {
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -280,7 +279,7 @@ nav {
       flex-wrap: wrap;
   padding-top: 200px;
 }
-.hero--button {
+.hero__button {
   background: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -349,7 +348,7 @@ nav {
   background-image: url(../images12/astronaut.png);
 }
 
-.why-we--subtitle {
+.why-we__subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -358,7 +357,7 @@ nav {
   color: #212121;
 }
 
-.why-we--text {
+.why-we__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -612,7 +611,7 @@ nav {
           justify-content: center;
 }
 
-.about__section {
+.about {
   padding-top: 94px;
 }
 
@@ -634,7 +633,7 @@ nav {
   margin-left: 30px;
 }
 
-.about__block {
+.about-block {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8)));
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
   width: 370px;
@@ -643,7 +642,7 @@ nav {
   top: 224px;
 }
 
-.about--subtitle {
+.about__subtitle {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -658,7 +657,7 @@ nav {
   left: 100px;
 }
 
-.about--title {
+.about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -681,7 +680,7 @@ nav {
   margin-right: auto;
   margin-left: auto;
 }
-.team--title {
+.team__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -717,7 +716,7 @@ nav {
   margin-left: 0;
 }
 
-.team--subtitle {
+.team__subtitle {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -740,7 +739,7 @@ nav {
   margin-top: 30px;
 }
 
-.team--text {
+.team__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
@@ -755,7 +754,7 @@ nav {
   padding-bottom: 28px;
 }
 
-.team__socials {
+.team-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -763,7 +762,7 @@ nav {
   padding-left: 32px;
 }
 
-.team__socials__item {
+.team-socials__item {
   margin-right: 10px;
   width: 44px;
   height: 44px;
@@ -778,10 +777,10 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
-.team__socials__item:last-child {
+.team-socials__item:last-child {
   margin-right: 0px;
 }
-.team__socials__item:hover {
+.team-socials__item:hover {
   fill: #fff;
   background-color: #2196f3;
   -webkit-box-pack: center;
@@ -798,7 +797,7 @@ nav {
           transition-delay: 50ms;
 }
 
-.team__socials__item a {
+.team-socials__item a {
   fill: #afb1b8;
   width: 44px;
   height: 44px;
@@ -820,16 +819,16 @@ nav {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-.team__socials__item a:hover {
+.team-socials__item a:hover {
   fill: #fff;
 }
 
-.clients__section {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.clients--title {
+.clients__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -888,7 +887,7 @@ nav {
   display: flex;
   position: relative;
 }
-.footer--subtitle {
+.footer__subtitle {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -947,18 +946,18 @@ footer .container {
   display: flex;
 }
 
-.footer__socials {
+.footer-socials {
   margin-left: 70px;
 }
 
-.footer__socials__list {
+.footer-socials__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
-.footer__socials__item {
+.footer-socials__item {
   margin-right: 10px;
   width: 44px;
   height: 44px;
@@ -982,8 +981,18 @@ footer .container {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
+.footer-socials__item:last-child {
+  margin-right: 0;
+}
+.footer-socials__item:hover {
+  background-color: #2196f3;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: center;
+}
 
-.footer__socials--link {
+.footer-socials--link {
   fill: #fff;
   width: 44px;
   height: 44px;
@@ -996,22 +1005,6 @@ footer .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.footer__socials__item:last-child {
-  margin-right: 0px;
-}
-
-.footer__socials__item:hover {
-  background-color: #2196f3;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  vertical-align: center;
-}
-
-.footer__socials--link:hover {
-  fill: #fff;
 }
 
 .footer__mailing {
@@ -1040,7 +1033,6 @@ footer .container {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-
 .footer--input:hover {
   border: 1px solid #2196f3;
 }
