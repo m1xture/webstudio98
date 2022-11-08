@@ -58,7 +58,7 @@
   padding-bottom: 40px;
   padding-left: 40px;
 }
-.modal__list__item {
+.modal__item {
   margin-bottom: 10px;
   position: relative;
 }
@@ -86,7 +86,7 @@
   left: 12px;
   bottom: 11px;
 }
-.modal__input__svg-block {
+.svg-block {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
@@ -95,10 +95,7 @@
     fill: $hover-color;
   }
 }
-// .modal__input__svg-block:hover {
-  
-// }
-.modal__list__label {
+.modal__label {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -137,7 +134,7 @@
   border-radius: 4px;
   }
 }
-.modal__checkbox__label {
+.checkbox__label {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -183,7 +180,7 @@
   padding-left: 58px;
   margin-top: 30px;
 }
-.modal-block-button {
+.modal-block {
   display: flex;
   justify-content: center;
 }
