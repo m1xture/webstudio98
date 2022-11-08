@@ -233,7 +233,7 @@ body {
   fill: currentColor;
 }
 
-.filters__section {
+.filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,7 +243,7 @@ body {
   padding-top: 94px;
 }
 
-.filters--button {
+.filters__btn {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -267,7 +267,7 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-.filters--button:hover {
+.filters__btn:hover {
   color: white;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -285,7 +285,7 @@ body {
 }
 
 /* Projects */
-.projects__section {
+.projects {
   padding-bottom: 94px;
 }
 
@@ -340,7 +340,7 @@ body {
   margin-bottom: 0;
 }
 
-.item__block {
+.item-block {
   position: absolute;
   width: 370px;
   height: 294px;
@@ -359,7 +359,7 @@ body {
   transition: transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88), opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69), -webkit-transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88);
 }
 
-.card--description {
+.card__description {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -369,7 +369,7 @@ body {
   color: #ffffff;
 }
 
-.projects__item .card--title {
+.card__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -381,7 +381,7 @@ body {
   padding-left: 24px;
 }
 
-.card--text {
+.card__text {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;

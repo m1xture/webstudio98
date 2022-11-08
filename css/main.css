@@ -439,7 +439,7 @@ body {
   padding-left: 40px;
 }
 
-.modal__list__item {
+.modal__item {
   margin-bottom: 10px;
   position: relative;
 }
@@ -475,7 +475,7 @@ body {
   bottom: 11px;
 }
 
-.modal__input__svg-block {
+.svg-block {
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -485,11 +485,11 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-.modal__input__svg-block:hover {
+.svg-block:hover {
   fill: #2196f3;
 }
 
-.modal__list__label {
+.modal__label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -535,7 +535,7 @@ body {
   border-radius: 4px;
 }
 
-.modal__checkbox__label {
+.checkbox__label {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -598,7 +598,7 @@ body {
   margin-top: 30px;
 }
 
-.modal-block-button {
+.modal-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
