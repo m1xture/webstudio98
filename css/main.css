@@ -39,12 +39,24 @@ body {
   font-family: "Roboto";
 }
 
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .header {
@@ -245,39 +257,65 @@ body {
   fill: currentColor;
 }
 
-.hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 200px;
-  /* background: rgba(47, 48, 58, 0.4); */
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images12/background.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images12/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-left: 60px;
+  }
 }
-.hero__title {
-  width: 696px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 200px;
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-left: 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-left: 452px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images12/background.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images12/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    color: #fff;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 200px;
+  }
 }
 .hero__button {
   background: #2196f3;
@@ -638,7 +676,7 @@ body {
   top: 224px;
 }
 
-.about__subtitle {
+.about-block__subtitle {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -758,7 +796,7 @@ body {
   padding-left: 32px;
 }
 
-.team-socials__item {
+.socials__item {
   margin-right: 10px;
   width: 44px;
   height: 44px;
@@ -773,10 +811,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.team-socials__item:last-child {
+.socials__item:last-child {
   margin-right: 0px;
 }
-.team-socials__item:hover {
+.socials__item:hover {
   fill: #fff;
   background-color: #2196f3;
   -webkit-box-pack: center;
@@ -793,7 +831,7 @@ body {
           transition-delay: 50ms;
 }
 
-.team-socials__item a {
+.socials__item a {
   fill: #afb1b8;
   width: 44px;
   height: 44px;
@@ -815,7 +853,7 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-.team-socials__item a:hover {
+.socials__item a:hover {
   fill: #fff;
 }
 
