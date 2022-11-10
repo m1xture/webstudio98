@@ -181,6 +181,18 @@ body {
           align-items: center;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .header__list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .header--link {
   color: #757575;
