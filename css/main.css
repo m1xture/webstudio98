@@ -38,10 +38,29 @@ p {
 body {
   font-family: "Roboto";
 }
+@media screen and (min-width: 480px) {
+  body {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    width: 1200px;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -52,10 +71,6 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
@@ -272,16 +287,9 @@ body {
 @media screen and (min-width: 480px) {
   .hero {
     padding-top: 118px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 118px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-top: 200px;
+    padding-right: 60px;
+    padding-bottom: 118px;
+    padding-left: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -295,11 +303,24 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images12/background.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images12/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-right: 204px;
+    padding-left: 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-left: 525px;
+    padding-right: 525px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -312,11 +333,18 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
@@ -350,8 +378,15 @@ body {
   border: 0;
 }
 
-.why-we {
-  padding-top: 94px;
+@media screen and (min-width: 480px) {
+  .why-we {
+    padding-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .why-we {
+    padding-top: 94px;
+  }
 }
 .why-we__list {
   display: -webkit-box;

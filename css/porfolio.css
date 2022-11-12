@@ -26,10 +26,29 @@ p {
 body {
   font-family: "Roboto";
 }
+@media screen and (min-width: 480px) {
+  body {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    width: 1200px;
+  }
+}
 
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -40,10 +59,6 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
