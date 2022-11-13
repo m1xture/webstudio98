@@ -1,41 +1,63 @@
 // 192.168.0.106
 .why-we {
- 
-  @media screen and (min-width:480px){
+  @media screen and (min-width: 480px) {
     padding-top: 60px;
   }
   // @media screen  and (min-width:768px){
-    
+
   // }
-  @media screen and (min-width:1200px){
-     padding-top: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
   }
-  
+
   &__list {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+
+    @media screen and (min-width: 480px) {
+      margin-top: 0px;
+      flex-direction: column;
+    }
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 30px;
+      flex-direction: row;
+    }
   }
 }
 .why-we__item {
-  width: 270px;
-  margin-left: 30px;
+  @media screen and (min-width: 480px) {
+    width: auto;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    margin-left: 30px;
+  }
   &::before {
     content: '';
     height: 120px;
-    width: 270px;
     display: block;
     background-repeat: no-repeat;
     background-color: #f5f4fa;
     border-radius: 4px;
     background-position: center;
     margin-bottom: 30px;
+    @media screen and (min-width: 480px) {
+      width: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
   &:first-child::before {
     background-image: url(../images12/antenna.png);
   }
   &:first-child {
-      margin-left: 0;
+    margin-left: 0;
   }
   &:nth-child(2)::before {
     background-image: url(../images12/clock.png);
@@ -54,6 +76,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $text-color;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .why-we__text {
   font-weight: 400;
@@ -63,4 +89,8 @@
   color: #757575;
   flex-wrap: wrap;
   margin-top: 10px;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    margin-left: 0;
+  }
 }
