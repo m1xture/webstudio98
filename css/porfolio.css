@@ -488,6 +488,14 @@ body {
   display: flex;
   position: relative;
 }
+@media screen and (min-width: 480px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .footer__subtitle {
   font-family: "Roboto";
   font-style: normal;

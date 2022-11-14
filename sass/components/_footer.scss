@@ -3,6 +3,9 @@
   padding-top: 60px;
   display: flex;
   position: relative;
+  @media screen and (min-width:480px){
+    flex-direction: column;
+  }
   &__subtitle {
     font-family: 'Roboto';
     font-style: normal;

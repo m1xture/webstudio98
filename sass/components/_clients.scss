@@ -1,20 +1,42 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+  
+  @media screen and (min-width:480px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width:1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 .clients__title {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1, 16;
   text-align: center;
   letter-spacing: 0.03em;
   color: $text-color;
-  margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  @media screen and (min-width: 1200) {
+    font-size: 36px;
+    line-height: 1, 16;
+    margin-bottom: 50px;
+  }
 }
 .clients__list {
   display: flex;
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    gap: 0;
+  }
 }
 .clients__item {
   width: 170px;
@@ -28,13 +50,18 @@
   fill: #afb1b8;
   transition-property: border fill;
   transition-duration: 250ms;
-  transition-timing-function:cubic-bezier(.01,-0.01,.55,1) ;
+  transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
   &:hover {
     fill: $hover-color;
     border-color: $hover-color;
   }
+  // @media screen and (min-width: 480px) {
+  //   width: 210px;
+  //   height: 92px;
+  // }
   &:last-child {
     margin-right: 0;
   }
+}
 }
