@@ -39,6 +39,8 @@
   @include logo(black);
   @media screen and (min-width:480px){
     padding-top: 16px;
+    display: flex;
+    margin-right: 269px;
   }
   @media screen and (min-width:768px){
     padding-top: 26px;
@@ -52,12 +54,20 @@
 }
 .nav {
   display: flex;
+  @media screen and (min-width:480px){
+    display: flex;
+    justify-content: flex-start;
+  }
   &__list {
     display: flex;
     justify-content: center;
     margin-left: 93px;
     align-items: center;
   }
+}
+.nav__burger {
+  background-color: transparent;
+  border: none;
 }
 .nav__list {
   @media screen and (min-width:480px){

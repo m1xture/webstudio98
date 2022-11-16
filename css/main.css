@@ -123,6 +123,10 @@ body {
 @media screen and (min-width: 480px) {
   .header__logo {
     padding-top: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 269px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -145,6 +149,16 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (min-width: 480px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,6 +170,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav__burger {
+  background-color: transparent;
+  border: none;
 }
 
 @media screen and (min-width: 480px) {
@@ -349,6 +368,7 @@ body {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images12/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 @media screen and (min-width: 480px) {
   .hero {
