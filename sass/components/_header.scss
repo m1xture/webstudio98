@@ -40,7 +40,7 @@
   @media screen and (min-width:480px){
     padding-top: 16px;
     display: flex;
-    margin-right: 269px;
+    // margin-right: 269px;
   }
   @media screen and (min-width:768px){
     padding-top: 26px;
@@ -68,6 +68,15 @@
 .nav__burger {
   background-color: transparent;
   border: none;
+  
+  @media screen and (min-width:480px){
+    display: inline-block;
+    margin-left: 269px;
+  }
+  @media screen and (min-width:768px){
+    display: none;
+    margin-right: 0;
+  }
 }
 .nav__list {
   @media screen and (min-width:480px){

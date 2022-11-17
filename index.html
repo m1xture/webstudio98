@@ -27,7 +27,7 @@
           <a href="/" class="header__logo"
             ><span class="blue--logo">Web</span>Studio</a
           >
-          <button class="nav__burger">
+          <button class="nav__burger" data-mobile-open>
             <svg
               width="24"
               height="16"
@@ -395,10 +395,12 @@
 
     <!-- footer -->
 
-    <!-- <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-contacts">
-          <a href="/" class="footer__logo"><span class="blue--logo">Web</span>Studio</a>
+          <a href="/" class="footer__logo"
+            ><span class="blue--logo">Web</span>Studio</a
+          >
           <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
           <a href="mailto:info@example.com" class="connection"
             >info@example.com</a
@@ -453,68 +455,77 @@
         </div>
         <div class="footer__mailing">
           <h3 class="footer__subtitle">Підпишіться на розсилку</h3>
-          <input type="text" placeholder="E-mail" class="footer__input">
-          <button type="button" class="footer__btn"><svg width="24" height="24" class="footer__button__pic">
-            <use href="./images12/svg/telegram.svg#telegram"></use>
-          </svg><span class="footer__button__text">Підписатися</span></button>
-          
+          <input type="text" placeholder="E-mail" class="footer__input" />
+          <button type="button" class="footer__btn">
+            <svg width="24" height="24" class="footer__button__pic">
+              <use href="./images12/svg/telegram.svg#telegram"></use></svg
+            ><span class="footer__button__text">Підписатися</span>
+          </button>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- Modal -->
 
-    <!-- <section class="modal-section is-hidden" data-backdrop>
-        <div class="modal">
+    <section class="modal-section is-hidden" data-backdrop>
+      <div class="modal">
         <form class="modal-form">
-           <button class="modal__close-btn">
-           <svg width="11" height="11" class="modal-close-svg">
-            <use href="./images12/svg/close.svg#close-svg"></use>
-           </svg>
-        </button>
+          <button class="modal__close-btn">
+            <svg width="11" height="11" class="modal-close-svg">
+              <use href="./images12/svg/close.svg#close-svg"></use>
+            </svg>
+          </button>
           <div class="modal-container">
-           
-            <h2 class="modal__title">Залиште свої дані, ми Вам зателефонуємо</h2>
+            <h2 class="modal__title">
+              Залиште свої дані, ми Вам зателефонуємо
+            </h2>
             <ul class="modal__list">
               <li class="modal__item">
                 <label class="modal__label" for="name">Ім’я</label>
                 <div class="svg-block">
-                <input
-                  type="text"
-                  class="modal__input"
-                  id="name"
-                  name="user-name"
-                />
-                <svg width="18" height="18" class="modal__svg" data-close-modal>
-                  <use href="./images12/svg/modal.svg#icon-modal-person"></use>
-                </svg>
+                  <input
+                    type="text"
+                    class="modal__input"
+                    id="name"
+                    name="user-name"
+                  />
+                  <svg
+                    width="18"
+                    height="18"
+                    class="modal__svg"
+                    data-close-modal
+                  >
+                    <use
+                      href="./images12/svg/modal.svg#icon-modal-person"
+                    ></use>
+                  </svg>
                 </div>
               </li>
               <li class="modal__item">
                 <label class="modal__label" for="phone">Телефон</label>
                 <div class="svg-block">
-                <input
-                  type="text"
-                  class="modal__input"
-                  id="phone"
-                  name="user-phone"
-                />
-                <svg width="18" height="18" class="modal__svg">
-                  <use href="./images12/svg/modal.svg#icon-modal-phone"></use>
-                </svg>
+                  <input
+                    type="text"
+                    class="modal__input"
+                    id="phone"
+                    name="user-phone"
+                  />
+                  <svg width="18" height="18" class="modal__svg">
+                    <use href="./images12/svg/modal.svg#icon-modal-phone"></use>
+                  </svg>
                 </div>
               </li>
               <li class="modal__item">
                 <label class="modal__label" for="mail">Пошта</label>
                 <div class="svg-block">
-                <input
-                  type="tel"
-                  class="modal__input"
-                  id="mail"
-                  name="user-mail"
-                />
-                <svg width="18" height="18" class="modal__svg">
-                  <use href="./images12/svg/modal.svg#icon-modal-email"></use>
-                </svg>
+                  <input
+                    type="tel"
+                    class="modal__input"
+                    id="mail"
+                    name="user-mail"
+                  />
+                  <svg width="18" height="18" class="modal__svg">
+                    <use href="./images12/svg/modal.svg#icon-modal-email"></use>
+                  </svg>
                 </div>
               </li>
             </ul>
@@ -532,12 +543,32 @@
               >
             </div>
             <div class="modal-block">
-            <button type="button" class="modal__button">Надіслати</button>
+              <button type="button" class="modal__button">Надіслати</button>
             </div>
           </div>
         </form>
-        </div>
-      </section> -->
+      </div>
+    </section>
+    <div class="backdrop is-hidden" data-mobile>
+      <div class="mobile-modal">
+      <button data-mobile-close>kfgy</button>
+      <nav>
+        <ul class="pagination">
+          <li class="pagination__item">
+            <a class="pagination__link" href="./index.html">Студія</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="./pages/portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#footer">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </div>
     <script>
       const refs = {
         openModalBtn: document.querySelector('[data-open-modal]'),
@@ -557,6 +588,39 @@
       function logBackdropClick() {
         console.log('Це клік в бекдроп');
       }
+    </script>
+    <script>
+      (() => {
+        const menuBtnRef = document.querySelector('[data-menu-button]');
+        const mobileMenuRef = document.querySelector('[data-menu]');
+
+        menuBtnRef.addEventListener('click', () => {
+          const expanded =
+            menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+
+          menuBtnRef.classList.toggle('is-open');
+          menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+          mobileMenuRef.classList.toggle('is-open');
+        });
+      })();
+    </script>
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-mobile-open]'),
+          closeModalBtn: document.querySelector('[data-mobile-close]'),
+          modal: document.querySelector('[data-mobile]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          document.body.classList.toggle('modal-open');
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
     </script>
   </body>
 </html>

@@ -3,8 +3,11 @@
   padding-top: 60px;
   display: flex;
   position: relative;
-  @media screen and (min-width:480px){
+  @media screen and (min-width: 480px) {
     flex-direction: column;
+  }
+  @media screen and (min-width:768px){
+    flex-direction: row;
   }
   &__subtitle {
     font-family: 'Roboto';
@@ -29,7 +32,7 @@
   color: #ffffff;
   font-style: normal;
   margin-top: 20px;
-  display: flex;
+  // display: flex;
 }
 .connection {
   font-weight: 400;
@@ -37,15 +40,42 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  display: flex;
+  // display: flex;
   margin-top: 9px;
 }
 .footer .container {
-  padding-bottom: 63px;
+ 
   display: flex;
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+  @media screen and (min-width:1200px){
+    padding-bottom: 63px;
+  }
+}
+.footer-contacts {
+  @media screen and (min-width:480px){
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .footer-socials {
-  margin-left: 70px;
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
+   
+  }
+  @media screen and (min-width: 768) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 .footer-socials__list {
   display: flex;
@@ -91,7 +121,15 @@
 //   vertical-align: center;
 // }
 .footer__mailing {
-  margin-left: 93px;
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
+  }
+  // @media screen and (min-width:768){
+  //   margin-left: 165px;
+  // }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .footer__input {
   width: 358px;
@@ -128,13 +166,16 @@
   line-height: 30px;
   letter-spacing: 0.06em;
   color: #ffffff;
-  margin-left: 12px;
   position: relative;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  position: absolute;
-  top: 96px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+    position: absolute;
+    top: 96px;
+  }
 }
 .footer__button__pic {
   position: absolute;

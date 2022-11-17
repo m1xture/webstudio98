@@ -2,12 +2,14 @@
 .why-we {
   @media screen and (min-width: 480px) {
     padding-top: 60px;
+    padding-bottom: 60px;
   }
   // @media screen  and (min-width:768px){
 
   // }
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 
   &__list {
@@ -48,13 +50,21 @@
     margin-bottom: 30px;
     @media screen and (min-width: 480px) {
       width: auto;
+      margin-top: 30px;
+    }
+    @media screen and (min-width:768px){
+      margin-top: 0;
     }
     @media screen and (min-width: 1200px) {
       width: 270px;
+      margin-top: 0;
     }
   }
   &:first-child::before {
     background-image: url(../images12/antenna.png);
+    @media screen and (min-width:480px){
+      margin-top: 0;
+    }
   }
   &:first-child {
     margin-left: 0;
