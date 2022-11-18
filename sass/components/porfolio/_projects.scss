@@ -1,7 +1,16 @@
 .filters {
   display: flex;
-  justify-content: center;
-  padding-top: 94px;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    padding-top: 94px;
+  }
 }
 .filters__btn {
   font-family: 'Roboto';
@@ -37,7 +46,12 @@
 /* Projects */
 
 .projects {
-  padding-bottom: 94px;
+  @media screen and (min-width:480px){
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width:768px){
+    padding-bottom: 94px;
+  }
 }
 .projects__list {
   display: flex;
@@ -66,22 +80,22 @@
     opacity: 1;
   }
   &:nth-child(4n) {
-  margin-left: 0;
-}
+    margin-left: 0;
+  }
   &:first-child {
-  margin-left: 0;
-}
- &:nth-child(7) {
-  margin-left: 0;
-  margin-bottom: 0;
-}
- &:nth-child(8) {
-  margin-left: 30px;
-  margin-bottom: 0;
-}
- &:nth-child(9) {
-  margin-bottom: 0;
-}
+    margin-left: 0;
+  }
+  &:nth-child(7) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  &:nth-child(8) {
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+  &:nth-child(9) {
+    margin-bottom: 0;
+  }
 }
 .item-block {
   position: absolute;

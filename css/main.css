@@ -178,7 +178,9 @@ body {
 @media screen and (min-width: 480px) {
   .nav__burger {
     display: inline-block;
-    margin-left: 269px;
+    margin-left: 255px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1552,12 +1554,14 @@ body {
 }
 @media screen and (min-width: 480px) {
   .footer__btn {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__btn {
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1605,4 +1609,95 @@ body {
 
 .backdrop.is-hidden {
   display: none;
+}
+
+.menu-container {
+  padding-top: 48px;
+  padding-right: 15px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.menu__close {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.pagination__item {
+  margin-bottom: 32px;
+}
+.pagination__item:last-child {
+  margin-bottom: 0;
+}
+
+.pagination__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.pagination__link:hover {
+  color: #2196f3;
+}
+
+.menu__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding-top: 52px;
+}
+
+.menu__mail {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+}
+
+.aside__item {
+  margin-right: 20px;
+}
+.aside__item:last-child {
+  margin-right: 0;
+}
+.aside__item:after {
+  margin-left: 10px;
+  color: #212121;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 22px;
+  height: 50px;
+}
+
+.aside__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */

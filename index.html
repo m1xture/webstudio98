@@ -28,19 +28,8 @@
             ><span class="blue--logo">Web</span>Studio</a
           >
           <button class="nav__burger" data-mobile-open>
-            <svg
-              width="24"
-              height="16"
-              viewBox="0 0 24 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
-                fill="black"
-              />
+            <svg width="40" height="40">
+              <use href="./images12/svg/menu-svg.svg#burger"></use>
             </svg>
           </button>
           <ul class="nav__list">
@@ -551,22 +540,46 @@
     </section>
     <div class="backdrop is-hidden" data-mobile>
       <div class="mobile-modal">
-      <button data-mobile-close>kfgy</button>
-      <nav>
-        <ul class="pagination">
-          <li class="pagination__item">
-            <a class="pagination__link" href="./index.html">Студія</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="./pages/portfolio.html"
-              >Портфоліо</a
-            >
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#footer">Контакти</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="menu-container">
+          <button data-mobile-close class="menu__close">
+            <svg width="40" height="40">
+              <use href="./images12/svg/menu-svg.svg#burger-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link" href="./index.html">Студія</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="./pages/portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#footer">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+380961111111" class="menu__link">+38 096 111 11 11</a>
+          <a href="mailto:info@devstudio.com" class="menu__mail"
+            >info@devstudio.com</a
+          >
+          <ul class="aside">
+            <li class="aside__item">
+              <a href="https://www.instagram.com/" class="aside__link">Instagram</a>
+            </li>
+            <li class="aside__item">
+              <a href="https://twitter.com/?lang=ru" class="aside__link">Twitter</a>
+            </li>
+            <li class="aside__item">
+              <a href="https://uk-ua.facebook.com/" class="aside__link">Facebook</a>
+            </li>
+            <li class="aside__item">
+              <a href=https://ua.linkedin.com/" class="aside__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <script>

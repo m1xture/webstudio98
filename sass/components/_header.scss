@@ -68,10 +68,11 @@
 .nav__burger {
   background-color: transparent;
   border: none;
-  
   @media screen and (min-width:480px){
     display: inline-block;
-    margin-left: 269px;
+    margin-left: 255px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   @media screen and (min-width:768px){
     display: none;
