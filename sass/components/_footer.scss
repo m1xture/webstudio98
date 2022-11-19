@@ -180,7 +180,7 @@
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
   @media screen and (min-width:480px){
-    width: 450px;
+    width: auto;
   }
   @media screen and (min-width:1200px){
     width: 358px;
@@ -211,12 +211,12 @@
   @media screen and (min-width:480px){
     // display: inline;
     // text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 140px;
     margin-top: 20px;
   }
   @media screen and (min-width:768px){
     margin-top: 0px;
+    margin-left: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 12px;

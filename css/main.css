@@ -178,7 +178,7 @@ body {
 @media screen and (min-width: 480px) {
   .nav__burger {
     display: inline-block;
-    margin-left: 255px;
+    margin-left: 253px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -483,6 +483,16 @@ body {
             flex-direction: column;
   }
 }
+@media screen and (min-width: 768px) {
+  .why-we__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .why-we__list {
     margin-top: 30px;
@@ -497,6 +507,11 @@ body {
   .why-we__item {
     width: auto;
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .why-we__item {
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -955,6 +970,16 @@ body {
 }
 .team__list:first-child {
   margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 1200px) {
   .team__list {
@@ -1515,7 +1540,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .footer__input {
-    width: 450px;
+    width: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1554,14 +1579,14 @@ body {
 }
 @media screen and (min-width: 480px) {
   .footer__btn {
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 140px;
     margin-top: 20px;
   }
 }
 @media screen and (min-width: 768px) {
   .footer__btn {
     margin-top: 0px;
+    margin-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1656,7 +1681,8 @@ body {
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196f3;
-  padding-top: 52px;
+  margin-top: 102px;
+  display: block;
 }
 
 .menu__mail {

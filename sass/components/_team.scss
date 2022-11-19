@@ -40,6 +40,13 @@
   &:first-child {
     margin-left: 0;
   }
+  // @media screen and (min-width:480px){
+   
+  // }
+  @media screen and (min-width:768px){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
@@ -56,6 +63,11 @@
     @media screen and (min-width: 480px) {
       margin-top: 0;
     }
+    // @media screen and (min-width: 768px){
+    //   margin-left 0;
+    // }
+  }
+  &:nth-child(2) {
   }
   @media screen and (min-width: 480px) {
     width: 450px;

@@ -105,7 +105,7 @@
                 <img
                   src="../images12/kryak.jpg"
                   alt="technokryak"
-                  class="projects-pic"
+                  class="projects__pic"
                 />
                 <h2 class="card__title">Технокряк</h2>
                 <p class="card__text">Веб-сайт</p>
@@ -120,7 +120,11 @@
             </li>
             <li class="projects__item">
               <div class="card-overlay">
-                <img src="../images12/orlean.jpg" alt="new-orlean" />
+                <img
+                  src="../images12/orlean.jpg"
+                  alt="new-orlean"
+                  class="projects__pic"
+                />
                 <h2 class="card__title">Постер New Orlean vs Golden Star</h2>
                 <p class="card__text">Дизайн</p>
                 <div class="item-block">
@@ -134,7 +138,11 @@
             </li>
             <li class="projects__item">
               <div class="card-overlay">
-                <img src="../images12/seafood.jpg" alt="restaurant-seafood" />
+                <img
+                  src="../images12/seafood.jpg"
+                  alt="restaurant-seafood"
+                  class="projects__pic"
+                />
                 <h2 class="card__title">Ресторан Seafood</h2>
                 <p class="card__text">Застосунок</p>
                 <div class="item-block">
@@ -148,7 +156,11 @@
             </li>
             <li class="projects__item">
               <div class="card-overlay">
-                <img src="../images12/prime.jpg" alt="prime-project" />
+                <img
+                  src="../images12/prime.jpg"
+                  alt="prime-project"
+                  class="projects__pic"
+                />
                 <h2 class="card__title">Проект Prime</h2>
                 <p class="card__text">Маркетинг</p>
                 <div class="item-block">
@@ -162,7 +174,11 @@
             </li>
             <li class="projects__item">
               <div class="card-overlay">
-                <img src="../images12/boxes.jpg" alt="boxes" />
+                <img
+                  src="../images12/boxes.jpg"
+                  alt="boxes"
+                  class="projects__pic"
+                />
                 <h2 class="card__title">Проект Boxes</h2>
                 <p class="card__text">Застосунок</p>
                 <div class="item-block">
@@ -176,7 +192,11 @@
             </li>
             <li class="projects__item">
               <div class="card-overlay">
-                <img src="../images12/inspiration.jpg" alt="has-no-borders" />
+                <img
+                  src="../images12/inspiration.jpg"
+                  alt="has-no-borders"
+                  class="projects__pic"
+                />
                 <h2 class="card__title">Inspiration has no Borders</h2>
                 <p class="card__text">Веб-сайт</p>
                 <div class="item-block">
@@ -190,7 +210,11 @@
             </li>
             <li class="projects__item">
               <div class="card-overlay">
-                <img src="../images12/limited.jpg" alt="limited-edition" />
+                <img
+                  src="../images12/limited.jpg"
+                  alt="limited-edition"
+                  class="projects__pic"
+                />
                 <h2 class="card__title">Видавництво Limited Edition</h2>
                 <p class="card__text">Дизайн</p>
                 <div class="item-block">
@@ -204,7 +228,11 @@
             </li>
             <li class="projects__item">
               <div class="card-overlay">
-                <img src="../images12/lab.jpg" alt="lab" />
+                <img
+                  src="../images12/lab.jpg"
+                  alt="lab"
+                  class="projects__pic"
+                />
                 <h2 class="card__title">Проект LAB</h2>
                 <p class="card__text">Маркетинг</p>
                 <div class="item-block">
@@ -218,7 +246,11 @@
             </li>
             <li class="projects__item">
               <div class="card-overlay"></div>
-              <img src="../images12/bussiness.jpg" alt="growing-bussiness" />
+              <img
+                src="../images12/bussiness.jpg"
+                alt="growing-bussiness"
+                class="projects__pic"
+              />
               <h2 class="card__title">Growing Business</h2>
               <p class="card__text">Застосунок</p>
               <div class="item-block">
@@ -306,5 +338,66 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-mobile>
+      <div class="mobile-modal">
+        <div class="menu-container">
+          <button data-mobile-close class="menu__close">
+            <svg width="40" height="40">
+              <use href="../images12/svg/menu-svg.svg#burger-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link" href="../index.html">Студія</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="./pages/portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#footer">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+380961111111" class="menu__link">+38 096 111 11 11</a>
+          <a href="mailto:info@devstudio.com" class="menu__mail"
+            >info@devstudio.com</a
+          >
+          <ul class="aside">
+            <li class="aside__item">
+              <a href="https://www.instagram.com/" class="aside__link">Instagram</a>
+            </li>
+            <li class="aside__item">
+              <a href="https://twitter.com/?lang=ru" class="aside__link">Twitter</a>
+            </li>
+            <li class="aside__item">
+              <a href="https://uk-ua.facebook.com/" class="aside__link">Facebook</a>
+            </li>
+            <li class="aside__item">
+              <a href=https://ua.linkedin.com/" class="aside__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+     <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector('[data-mobile-open]'),
+          closeModalBtn: document.querySelector('[data-mobile-close]'),
+          modal: document.querySelector('[data-mobile]'),
+        };
+
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+
+        function toggleModal() {
+          document.body.classList.toggle('modal-open');
+          refs.modal.classList.toggle('is-hidden');
+        }
+      })();
+    </script>
   </body>
 </html>
