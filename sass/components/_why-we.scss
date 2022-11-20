@@ -31,16 +31,20 @@
   }
 }
 .why-we__item {
+  margin-right: 0;
   @media screen and (min-width: 480px) {
     width: auto;
-    margin-right: 0;
   }
   @media screen and (min-width: 768px) {
     width: 354px;
+    margin-right: 30px;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
     margin-left: 30px;
+  }
+  &:nth-child(2n) {
+    margin-right: 0;
   }
   &::before {
     content: '';
