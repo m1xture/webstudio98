@@ -64,9 +64,11 @@
     @media screen and (min-width: 480px) {
       margin-top: 0;
     }
-    // @media screen and (min-width: 768px){
-    //   margin-left 0;
-    // }
+  }
+  &:nth-child(2){
+    @media screen and (min-width:768px){
+      margin-top: 0;
+    }
   }
   &:nth-child(3) {
     @media screen and (min-width:768px){
@@ -80,13 +82,10 @@
   @media screen and (min-width: 768px) {
     width: 354px;
     margin-left: 30px;
-    margin-top: 0;
+    // margin-top: ;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
-  }
-  &::first-child {
-    
   }
 }
 .team__img {

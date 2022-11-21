@@ -23,7 +23,7 @@
       // display: inline;
       text-align: center;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       // text-align: left;
       display: flex;
     }
@@ -61,9 +61,9 @@
     display: block;
     text-align: center;
   }
-  @media screen and (min-width: 768px) {
-    text-align: left;
-  }
+  // @media screen and (min-width: 768px) {
+  //   text-align: left;
+  // }
 }
 .footer .container {
   display: flex;
@@ -73,6 +73,7 @@
   }
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     padding-bottom: 63px;
@@ -86,8 +87,10 @@
     text-align: center;
   }
   @media screen and (min-width: 768px) {
-    text-align: left;
-    margin-bottom: 0;
+   margin-left: 51px; 
+  }
+  @media screen and (min-width:1200px){
+    margin-left: 0;
   }
 }
 .footer-socials {
@@ -95,7 +98,7 @@
     margin-left: 0;
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) {
     margin-left: 165px;
     margin-bottom: 0;
   }
@@ -157,9 +160,10 @@
   @media screen and (min-width: 480px) {
     margin-left: 0;
   }
-  // @media screen and (min-width:768){
-  //   margin-left: 165px;
-  // }
+  @media screen and (min-width:768){
+    // display: flex;
+    // justify-content: center;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
@@ -180,10 +184,12 @@
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
   @media screen and (min-width:480px){
-    width: auto;
+    width: 450px;
+    display: block;
   }
   @media screen and (min-width:1200px){
     width: 358px;
+    display: inline;
   }
   &:hover {
     border: 1px solid $hover-color;
@@ -209,9 +215,8 @@
   display: inline-flex;
   align-items: center;
   @media screen and (min-width:480px){
-    // display: inline;
-    // text-align: center;
-    margin-left: 140px;
+   display: block;
+    // margin-left: 140px;
     margin-top: 20px;
   }
   @media screen and (min-width:768px){

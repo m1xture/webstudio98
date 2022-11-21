@@ -96,6 +96,11 @@
     padding-right: 24px;
     opacity: 1;
   }
+  &:nth-child(2n) {
+    @media screen and (min-width:768px){
+      margin-right: 0px;
+    }
+  }
   &:nth-child(4n) {
     margin-left: 0;
   }
@@ -120,6 +125,7 @@
   }
   &:nth-child(9) {
     margin-bottom: 0;
+    margin-right: 0;
   }
   @media screen and (min-width: 480px) {
     margin-left: 0;
@@ -127,9 +133,11 @@
   }
   @media screen and (min-width: 768px) {
     width: 354px;
+    margin-right: 30px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 30px;
+    margin-right: 0;
     margin-bottom: 30px;
     width: 370px;
   }
