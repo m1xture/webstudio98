@@ -159,6 +159,7 @@
 .footer__mailing {
   @media screen and (min-width: 480px) {
     margin-left: 0;
+    text-align: center;
   }
   @media screen and (min-width:768){
     // display: flex;
@@ -166,6 +167,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
+    text-align: left;
   }
 }
 .footer__input {
@@ -190,6 +192,7 @@
   @media screen and (min-width:1200px){
     width: 358px;
     display: inline;
+    margin-right: 12px;
   }
   &:hover {
     border: 1px solid $hover-color;
@@ -203,8 +206,6 @@
   height: 50px;
   color: #fff;
   border: 0;
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -212,21 +213,19 @@
   color: #ffffff;
   position: relative;
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   @media screen and (min-width:480px){
-   display: block;
-    // margin-left: 140px;
     margin-top: 20px;
+    justify-content: center;
   }
   @media screen and (min-width:768px){
     margin-top: 0px;
     margin-left: 0;
   }
   @media screen and (min-width: 1200px) {
-    margin-left: 12px;
-    position: absolute;
-    top: 96px;
+   
   }
 }
 .footer__button__pic {

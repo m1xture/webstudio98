@@ -23,6 +23,11 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 body {
   font-family: "Roboto";
 }
@@ -32,6 +37,16 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -276,22 +291,8 @@ body {
           align-items: center;
   margin-left: auto;
   display: none;
-}
-@media screen and (min-width: 480px) {
-  .header__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (min-width: 1200px) {
   .header__list {
@@ -890,11 +891,13 @@ body {
 @media screen and (min-width: 480px) {
   .footer__mailing {
     margin-left: 0;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__mailing {
     margin-left: 93px;
+    text-align: left;
   }
 }
 
@@ -929,6 +932,7 @@ body {
   .footer__input {
     width: 358px;
     display: inline;
+    margin-right: 12px;
   }
 }
 .footer__input:hover {
@@ -944,8 +948,6 @@ body {
   height: 50px;
   color: #fff;
   border: 0;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -953,17 +955,13 @@ body {
   color: #ffffff;
   position: relative;
   cursor: pointer;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (min-width: 480px) {
   .footer__btn {
-    display: block;
     margin-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -972,14 +970,6 @@ body {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer__btn {
-    margin-left: 12px;
-    position: absolute;
-    top: 96px;
-  }
-}
-
 .footer__button__pic {
   position: absolute;
   fill: #fff;
@@ -1064,7 +1054,6 @@ body {
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196f3;
-  margin-top: 102px;
   display: block;
 }
 

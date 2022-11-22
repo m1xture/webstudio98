@@ -21,4 +21,9 @@ h3 {
 
 p {
   margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
 }/*# sourceMappingURL=reset.css.map */

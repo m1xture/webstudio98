@@ -35,6 +35,11 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 body {
   font-family: "Roboto";
 }
@@ -44,6 +49,16 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -288,22 +303,8 @@ body {
           align-items: center;
   margin-left: auto;
   display: none;
-}
-@media screen and (min-width: 480px) {
-  .header__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (min-width: 1200px) {
   .header__list {
@@ -531,7 +532,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .why-we__list {
-    margin-top: 30px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1002,6 +1004,12 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 0px;
+  }
+}
+
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1010,23 +1018,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 94px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .team__list:first-child {
   margin-left: 0;
-}
-@media screen and (min-width: 768px) {
-  .team__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team__list {
@@ -1034,6 +1030,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-top: 50px;
   }
 }
 
@@ -1062,6 +1059,11 @@ body {
     margin-left: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__item:nth-child(3) {
+    margin-left: 30px;
+  }
+}
 @media screen and (min-width: 480px) {
   .team__item {
     width: 450px;
@@ -1077,25 +1079,23 @@ body {
 @media screen and (min-width: 1200px) {
   .team__item {
     width: 270px;
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 480px) {
   .team__img {
     width: 450px;
-    height: 460px;
   }
 }
 @media screen and (min-width: 768px) {
   .team__img {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__img {
     width: 270px;
-    height: 260px;
   }
 }
 
@@ -1566,11 +1566,13 @@ body {
 @media screen and (min-width: 480px) {
   .footer__mailing {
     margin-left: 0;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__mailing {
     margin-left: 93px;
+    text-align: left;
   }
 }
 
@@ -1605,6 +1607,7 @@ body {
   .footer__input {
     width: 358px;
     display: inline;
+    margin-right: 12px;
   }
 }
 .footer__input:hover {
@@ -1620,8 +1623,6 @@ body {
   height: 50px;
   color: #fff;
   border: 0;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -1629,17 +1630,13 @@ body {
   color: #ffffff;
   position: relative;
   cursor: pointer;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (min-width: 480px) {
   .footer__btn {
-    display: block;
     margin-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1648,14 +1645,6 @@ body {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer__btn {
-    margin-left: 12px;
-    position: absolute;
-    top: 96px;
-  }
-}
-
 .footer__button__pic {
   position: absolute;
   fill: #fff;
@@ -1740,7 +1729,6 @@ body {
   line-height: 40px;
   letter-spacing: 0.02em;
   color: #2196f3;
-  margin-top: 102px;
   display: block;
 }
 
