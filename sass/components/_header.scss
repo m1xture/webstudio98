@@ -12,19 +12,18 @@
 }
 .header .header__logo {
   align-items: center;
-  
-  
-  @media screen and (min-width:480px){
+
+  @media screen and (min-width: 480px) {
     padding-top: 16px;
     padding-bottom: 16px;
   }
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
   }
-  @media screen and (min-width:1200px){
-  padding-bottom: 25px;
-  padding-top: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 25px;
+    padding-top: 24px;
   }
 }
 .header .container {
@@ -32,19 +31,18 @@
 }
 .nav {
   display: flex;
-  
 }
 .header__logo {
   @include logo(black);
-  @media screen and (min-width:480px){
+  @media screen and (min-width: 480px) {
     padding-top: 16px;
     display: flex;
     // margin-right: 269px;
   }
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     padding-top: 26px;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     padding-top: 24px;
   }
 }
@@ -53,7 +51,7 @@
 }
 .nav {
   display: flex;
-  @media screen and (min-width:480px){
+  @media screen and (min-width: 480px) {
     display: flex;
     justify-content: flex-start;
   }
@@ -62,7 +60,7 @@
     justify-content: center;
     margin-left: 88px;
     align-items: center;
-    @media screen and(min-width:1200px){
+    @media screen and(min-width:1200px) {
       margin-left: 93px;
     }
   }
@@ -70,25 +68,35 @@
 .nav__burger {
   background-color: transparent;
   border: none;
-  @media screen and (min-width:480px){
+  @media screen and (min-width: 480px) {
     display: inline-block;
     margin-left: 253px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     display: none;
     margin-right: 0;
   }
 }
 .nav__list {
   display: none;
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     display: flex;
-   
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     display: flex;
+  }
+}
+.nav__item {
+  margin-right: 51px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 54px;
+  }
+  &:nth-child(3) {
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
   }
 }
 .nav--link {
@@ -97,21 +105,13 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $text-color;
-  margin-right: 54px;
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
   position: relative;
-  @media screen and (min-width:768px){
-    margin-right: 51px;
-  }
-  &:last-child {
-    @media screen and (min-width:768px){
-     
-    }
-  }
-  
+
   &::after {
     content: '';
     display: block;
@@ -156,14 +156,15 @@
   display: none;
   flex-wrap: wrap;
   // @media screen and (min-width: 480px) {
-    
+
   // }
   @media screen and (min-width: 768px) {
-    
-  }
-  @media screen and (min-width:1200px){
     display: flex;
+    margin-left: 96px;
   }
+  @media screen and (min-width: 1200px) {
+    
+}
 }
 .header--link {
   color: #757575;
@@ -207,23 +208,22 @@
   &:first-child {
     margin-left: 0;
   }
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     display: flex;
     margin-bottom: 10px;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     margin-left: 30px;
     margin-bottom: 0;
   }
   &::last-child {
-    @media screen and (min-width:768px){
+    @media screen and (min-width: 768px) {
       margin-left: 15px;
     }
-    @media screen and (min-width:1200px){
+    @media screen and (min-width: 1200px) {
       margin-left: 0;
     }
   }
-
 }
 .header--pic {
   margin-right: 10px;

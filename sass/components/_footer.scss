@@ -26,6 +26,7 @@
     @media screen and (min-width: 1200px) {
       // text-align: left;
       display: flex;
+      padding-top: 12px;
     }
   }
 }
@@ -61,9 +62,9 @@
     display: block;
     text-align: center;
   }
-  // @media screen and (min-width: 768px) {
-  //   text-align: left;
-  // }
+  @media screen and (min-width:1200px) {
+    text-align: left;
+  }
 }
 .footer .container {
   display: flex;
@@ -91,6 +92,7 @@
   }
   @media screen and (min-width:1200px){
     margin-left: 0;
+    text-align: left;
   }
 }
 .footer-socials {
@@ -225,7 +227,8 @@
     margin-left: 0;
   }
   @media screen and (min-width: 1200px) {
-   
+   position: absolute;
+   top: 108px;
   }
 }
 .footer__button__pic {
