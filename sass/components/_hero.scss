@@ -12,12 +12,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media screen and (min-width: 480px) {
-    padding-top: 118px;
-    padding-right: 60px;
-    padding-bottom: 118px;
-    padding-left: 60px;
-  }
+  padding-top: 118px;
+  padding-right: 60px;
+  padding-bottom: 118px;
+  padding-left: 60px;
   @media screen and (min-width: 768px) {
     padding-right: 204px;
     padding-left: 204px;
@@ -48,10 +46,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #fff;
+    font-size: 26px;
+    line-height: 42px;
+    flex-wrap: wrap;
     @media screen and (min-width: 480px) {
-      font-size: 26px;
-      line-height: 42px;
-      flex-wrap: wrap;
     }
     @media screen and (min-width: 768px) {
     }
@@ -78,6 +76,5 @@
     margin-top: 30px;
     padding-left: 24px;
     border: 0;
-    
   }
 }

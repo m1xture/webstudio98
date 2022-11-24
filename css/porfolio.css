@@ -182,14 +182,10 @@ body {
 .nav__burger {
   background-color: transparent;
   border: none;
-}
-@media screen and (min-width: 480px) {
-  .nav__burger {
-    display: inline-block;
-    margin-left: 253px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+  display: inline-block;
+  margin-left: 253px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 @media screen and (min-width: 768px) {
   .nav__burger {

@@ -194,14 +194,10 @@ body {
 .nav__burger {
   background-color: transparent;
   border: none;
-}
-@media screen and (min-width: 480px) {
-  .nav__burger {
-    display: inline-block;
-    margin-left: 253px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+  display: inline-block;
+  margin-left: 253px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 @media screen and (min-width: 768px) {
   .nav__burger {
@@ -432,14 +428,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-@media screen and (min-width: 480px) {
-  .hero {
-    padding-top: 118px;
-    padding-right: 60px;
-    padding-bottom: 118px;
-    padding-left: 60px;
-  }
+  padding-top: 118px;
+  padding-right: 60px;
+  padding-bottom: 118px;
+  padding-left: 60px;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -464,14 +456,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
-}
-@media screen and (min-width: 480px) {
-  .hero__title {
-    font-size: 26px;
-    line-height: 42px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+  font-size: 26px;
+  line-height: 42px;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -504,11 +491,9 @@ body {
   border: 0;
 }
 
-@media screen and (min-width: 480px) {
-  .why-we {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.why-we {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .why-we {
@@ -523,15 +508,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-@media screen and (min-width: 480px) {
-  .why-we__list {
-    margin-top: 0px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  margin-top: 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .why-we__list {
@@ -985,11 +966,7 @@ body {
 .team .container {
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (min-width: 480px) {
-  .team .container {
-    padding-top: 60px;
-  }
+  padding-top: 60px;
 }
 @media screen and (min-width: 1200px) {
   .team .container {
@@ -1011,13 +988,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .team__title {
-    font-size: 28px;
-    line-height: 33px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1056,14 +1033,12 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  width: 100%;
+  margin-top: 30px;
 }
 .team__item:first-child {
   margin-left: 0;
-}
-@media screen and (min-width: 480px) {
-  .team__item:first-child {
-    margin-top: 0;
-  }
+  margin-top: 0;
 }
 @media screen and (min-width: 768px) {
   .team__item:nth-child(2) {
@@ -1083,7 +1058,6 @@ body {
 @media screen and (min-width: 480px) {
   .team__item {
     width: 450px;
-    margin-top: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1157,13 +1131,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-@media screen and (min-width: 480px) {
-  .team-socials {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .team-socials {

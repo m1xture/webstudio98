@@ -68,12 +68,10 @@
 .nav__burger {
   background-color: transparent;
   border: none;
-  @media screen and (min-width: 480px) {
-    display: inline-block;
-    margin-left: 253px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-  }
+  display: inline-block;
+  margin-left: 253px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   @media screen and (min-width: 768px) {
     display: none;
     margin-right: 0;
@@ -163,7 +161,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
-}
+  }
 }
 .header--link {
   color: #757575;
