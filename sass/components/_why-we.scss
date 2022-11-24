@@ -98,9 +98,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $text-color;
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
   }
 }
 .why-we__text {

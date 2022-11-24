@@ -152,7 +152,7 @@
 .header__list {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  margin-left: 60px;
   display: none;
   flex-wrap: wrap;
   // @media screen and (min-width: 480px) {
@@ -160,10 +160,9 @@
   // }
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-left: 96px;
   }
   @media screen and (min-width: 1200px) {
-    
+    margin-left: auto;
 }
 }
 .header--link {

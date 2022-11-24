@@ -309,7 +309,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: auto;
+  margin-left: 60px;
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -319,9 +319,14 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 96px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__list {
+    margin-left: auto;
+  }
+}
+
 .header--link {
   color: #757575;
   font-weight: 500;
@@ -632,15 +637,18 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .why-we__subtitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1582,6 +1590,12 @@ body {
   .footer__mailing {
     margin-left: 0;
     text-align: center;
+  }
+}
+@media screen and (min-width: 768) {
+  .footer__mailing {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
