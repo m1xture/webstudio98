@@ -567,12 +567,8 @@ body {
   border-radius: 4px;
   background-position: center;
   margin-bottom: 30px;
-}
-@media screen and (min-width: 480px) {
-  .why-we__item::before {
-    width: auto;
-    margin-top: 30px;
-  }
+  width: auto;
+  margin-top: 30px;
 }
 @media screen and (min-width: 768px) {
   .why-we__item::before {

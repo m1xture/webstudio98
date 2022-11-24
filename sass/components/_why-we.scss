@@ -54,9 +54,9 @@
     border-radius: 4px;
     background-position: center;
     margin-bottom: 30px;
+    width: auto;
+    margin-top: 30px;
     @media screen and (min-width: 480px) {
-      width: auto;
-      margin-top: 30px;
     }
     @media screen and (min-width: 768px) {
       margin-top: 30px;
