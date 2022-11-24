@@ -30,6 +30,9 @@
     }
   }
 }
+.footer .container {
+  justify-content: center;
+}
 .footer__logo {
   @include logo(#fff);
   @media screen and (min-width: 480px) {

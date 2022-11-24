@@ -1351,6 +1351,12 @@ body {
   }
 }
 
+.footer .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .footer__logo {
   font-family: "Raleway";
   font-weight: 700;
