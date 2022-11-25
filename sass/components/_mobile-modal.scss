@@ -67,7 +67,7 @@
   color: $hover-color;
   // margin-top: 102px;
   display: block;
-  margin-top: 302px;
+  margin-top: auto;
   
 }
 .menu__mail {
@@ -89,8 +89,12 @@
   margin-right: 20px;
   &:last-child {
     margin-right: 0;
+    &:after {
+      display: none;
+    }
   }
   &:after {
+    content: '';
     margin-left: 10px;
     color: $text-color;
     border: 1px solid rgba(33, 33, 33, 0.2);

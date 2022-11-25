@@ -200,6 +200,11 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
 }
+@media screen and (min-width: 480px) {
+  .nav__burger {
+    margin-left: 256px;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav__burger {
     display: none;
@@ -1704,7 +1709,7 @@ body {
   letter-spacing: 0.02em;
   color: #2196f3;
   display: block;
-  margin-top: 302px;
+  margin-top: auto;
 }
 
 .menu__mail {
@@ -1732,7 +1737,11 @@ body {
 .aside__item:last-child {
   margin-right: 0;
 }
+.aside__item:last-child:after {
+  display: none;
+}
 .aside__item:after {
+  content: "";
   margin-left: 10px;
   color: #212121;
   border: 1px solid rgba(33, 33, 33, 0.2);

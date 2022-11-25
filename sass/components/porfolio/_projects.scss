@@ -1,17 +1,16 @@
 .filters {
   display: flex;
   border-top: 1px solid #ececec;
+  padding-top: 60px;
+  padding-bottom: 40px;
   @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 40px;
   }
   @media screen and (min-width: 768px) {
-   
   }
   @media screen and (min-width: 1200px) {
     justify-content: center;
     padding-top: 94px;
-     padding-bottom: 56px;
+    padding-bottom: 56px;
   }
 }
 .filters__btn {
@@ -33,6 +32,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
+  margin-top: 15px;
   &:hover {
     color: white;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -40,25 +40,21 @@
     background-color: #2196f3;
   }
   &:last-child {
-    @media screen and (min-width:480px){
-      margin-top: 0;
-    }
+    margin-top: 0;
+    // @media screen and (min-width: 480px) {
+    //   margin-top: 0;
+    // }
   }
-  @media screen and (min-width: 480px) {
-    margin-top: 15px;
-  }
+  // @media screen and (min-width: 480px) {
+
+  // }
   @media screen and (min-width: 1200px) {
     margin-top: 0;
   }
 }
 .filters__list {
   display: flex;
- 
-  
-  @media screen and (min-width: 480px) {
-    flex-wrap: wrap;
-  }
-
+  flex-wrap: wrap;
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
@@ -66,9 +62,7 @@
 /* Projects */
 
 .projects {
-  @media screen and (min-width: 480px) {
-    padding-bottom: 60px;
-  }
+  padding-bottom: 60px;
   @media screen and (min-width: 768px) {
     padding-bottom: 94px;
   }
@@ -85,6 +79,7 @@
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -99,7 +94,7 @@
     opacity: 1;
   }
   &:nth-child(2n) {
-    @media screen and (min-width:768px){
+    @media screen and (min-width: 768px) {
       margin-right: 0px;
     }
   }
@@ -117,8 +112,9 @@
     }
   }
   &:nth-child(8) {
+    margin-left: 0;
     @media screen and (min-width: 480px) {
-      margin-left: 0;
+      
     }
     @media screen and (min-width: 1200px) {
       margin-left: 30px;
@@ -161,10 +157,10 @@
     background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69);
 }
 .projects__pic {
-  @media screen and (min-width: 480px) {
-    width: 450px;
-    height: 294px;
-  }
+  width: 450px;
+  // @media screen and (min-width: 480px) {
+  // height: 294px;
+  // }
   @media screen and (min-width: 768px) {
     width: 354px;
   }
