@@ -63,7 +63,8 @@
   flex-direction: column;
   padding-bottom: 60px;
   justify-content: center;
-
+  
+ 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -181,7 +182,8 @@
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
   display: block;
-  width: auto;
+  min-width: 310px;
+
   @media screen and (min-width: 480px) {
     width: 450px;
   }

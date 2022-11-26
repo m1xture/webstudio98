@@ -12,11 +12,10 @@
 }
 .header .header__logo {
   align-items: center;
-
-  @media screen and (min-width: 480px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  padding-top: 16px;
+  padding-bottom: 16px;
+  // @media screen and (min-width: 480px) {
+  // }
   @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -34,11 +33,12 @@
 }
 .header__logo {
   @include logo(black);
-  @media screen and (min-width: 480px) {
-    padding-top: 16px;
-    display: flex;
-    // margin-right: 269px;
-  }
+  display: block;
+  padding-top: 16px;
+  // @media screen and (min-width: 480px) {
+
+  //   // margin-right: 269px;
+  // }
   @media screen and (min-width: 768px) {
     padding-top: 26px;
   }
@@ -52,7 +52,7 @@
 .nav {
   display: flex;
   @media screen and (min-width: 480px) {
-    display: flex;
+    // display: flex;
     justify-content: flex-start;
   }
   &__list {
@@ -68,12 +68,14 @@
 .nav__burger {
   background-color: transparent;
   border: none;
-  display: inline-block;
-  // margin-left: 253px;
+  display: block;
   margin-left: auto;
   padding-top: 12px;
   padding-bottom: 12px;
-  @media screen and (min-width:480px){
+  @media screen and (min-width:320px){
+    margin-left: 120px;
+  }
+  @media screen and (min-width: 480px) {
     margin-left: 256px;
   }
   @media screen and (min-width: 768px) {
