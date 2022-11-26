@@ -436,7 +436,6 @@ body {
           transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
-  margin-top: 15px;
 }
 .filters__btn:hover {
   color: white;
