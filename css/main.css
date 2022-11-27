@@ -1561,7 +1561,7 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
   display: block;
-  min-width: 310px;
+  min-width: 290px;
 }
 @media screen and (min-width: 480px) {
   .footer__input {
@@ -1717,6 +1717,7 @@ body {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+  margin-top: 32px;
 }
 
 .aside {
