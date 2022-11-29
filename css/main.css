@@ -685,6 +685,13 @@ body {
           transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 1%;
+  width: 90vw;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
 }
 .modal__close-btn {
   display: inline-block;
@@ -713,7 +720,6 @@ body {
 
 .modal__title {
   margin-bottom: 12px;
-  white-space: nowrap;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -721,6 +727,16 @@ body {
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) {
+  .modal__title {
+    white-space: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    white-space: nowrap;
+  }
 }
 
 .modal-container {
@@ -736,7 +752,7 @@ body {
 }
 
 .modal__input {
-  width: 448px;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -754,7 +770,18 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-.modal__input:hover, .modal__input :focus {
+@media screen and (min-width: 480px) {
+  .modal__input {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__input {
+    width: 448px;
+  }
+}
+.modal__input:hover,
+.modal__input :focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
   fill: #2196f3;
@@ -1673,6 +1700,16 @@ body {
   padding-bottom: 48px;
   margin-right: auto;
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .menu__close {
