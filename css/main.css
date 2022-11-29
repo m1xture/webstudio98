@@ -686,7 +686,6 @@ body {
   z-index: 2;
   border-radius: 1%;
 }
-
 .modal__close-btn {
   display: inline-block;
   position: absolute;
@@ -1733,6 +1732,7 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
   margin-top: 32px;
+  display: inline;
 }
 
 .aside {

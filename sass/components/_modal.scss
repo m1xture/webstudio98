@@ -14,11 +14,22 @@
 .modal {
   background-color: #fff;
   position: absolute;
-  top: 50%;
-  left: 50%;
+
   transform: translate(-50%, -50%);
   z-index: 2;
   border-radius: 1%;
+  @media screen and (min-width: 480px) {
+    top: 93px;
+    left: 15px;
+    // right: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    top: 50%;
+    left: 50%;
+
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .modal__close-btn {
   display: inline-block;
@@ -75,10 +86,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
-  &:hover,:focus {
-     border: 1px solid $hover-color;
-  border-radius: 4px;
-  fill: $hover-color;
+  &:hover,
+  :focus {
+    border: 1px solid $hover-color;
+    border-radius: 4px;
+    fill: $hover-color;
   }
 }
 .modal__svg {
@@ -130,8 +142,8 @@
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
   &:hover {
-  border: 1px solid $hover-color;
-  border-radius: 4px;
+    border: 1px solid $hover-color;
+    border-radius: 4px;
   }
 }
 .checkbox__label {
