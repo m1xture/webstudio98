@@ -219,12 +219,13 @@
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0;
   }
   @media screen and (min-width: 1200px) {
     position: absolute;
     top: 108px;
+    margin-top: 0;
   }
 }
 .footer__button__pic {

@@ -164,9 +164,13 @@
   // }
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-top: 21px;
+    margin-bottom: 21px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 .header--link {
@@ -210,6 +214,12 @@
   }
   &:first-child {
     margin-left: 0;
+    @media screen and (min-width:768px){
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width:1200px){
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: 768px) {
     display: flex;

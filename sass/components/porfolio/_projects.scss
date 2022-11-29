@@ -120,6 +120,12 @@
     @media screen and (min-width: 480px) {
       margin-bottom: 0px;
     }
+    @media screen and (min-width:768px){
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width:1200px){
+      margin-bottom: 0;
+    }
   }
   &:nth-child(8) {
     margin-left: 0;
