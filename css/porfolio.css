@@ -451,7 +451,7 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-.filters__btn:nth-child(5) {
+.filters__btn:last-child {
   margin-top: 15px;
 }
 .filters__btn:hover {

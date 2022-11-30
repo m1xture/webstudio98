@@ -693,11 +693,24 @@ body {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
+
 .modal__close-btn {
-  display: inline-block;
-  position: absolute;
-  top: 12px;
-  left: 490px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -711,6 +724,9 @@ body {
           transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
+  position: absolute;
+  right: 8px;
+  top: 8px;
 }
 .modal__close-btn:hover {
   fill: #2196f3;
@@ -824,8 +840,8 @@ body {
           box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
-  height: 128px;
+  width: 100%;
+  height: 120px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -848,6 +864,16 @@ body {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
+@media screen and (min-width: 480px) {
+  .modal__textarea {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__textarea {
+    width: 448px;
+  }
+}
 .modal__textarea:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
@@ -857,11 +883,17 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: #757575;
   margin-left: 8.38px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .modal__checkbox {
