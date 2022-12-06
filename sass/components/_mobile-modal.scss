@@ -26,11 +26,11 @@
   padding-right: 15px;
   padding-left: 40px;
   padding-bottom: 48px;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  // margin-right: auto;
+  // margin-left: auto;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
 }
 
 .menu__close {
@@ -60,9 +60,6 @@
   &:hover {
     color: $hover-color;
   }
-}
-.menu-contacts {
-  margin-top: 302px;
 }
 .menu__link {
   font-family: 'Roboto';
@@ -120,4 +117,7 @@
   line-height: 22px;
   letter-spacing: 0.02em;
   color: $hover-color;
+  @media screen and (min-width:320px){
+    font-size: 80%;
+  }
 }
