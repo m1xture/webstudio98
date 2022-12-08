@@ -463,13 +463,19 @@ body {
   }
 }
 
-.filters__item:last-child,
-:nth-child(4) {
+.filters__item:last-child {
   margin-top: 15px;
 }
 @media screen and (min-width: 768px) {
-  .filters__item:last-child,
-:nth-child(4) {
+  .filters__item:last-child {
+    margin-top: 0;
+  }
+}
+.filters__item:last-child:nth-child(4) {
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .filters__item:last-child:nth-child(4) {
     margin-top: 0;
   }
 }
