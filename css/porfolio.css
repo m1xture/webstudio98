@@ -467,6 +467,12 @@ body {
 :nth-child(4) {
   margin-top: 15px;
 }
+@media screen and (min-width: 768px) {
+  .filters__item:last-child,
+:nth-child(4) {
+    margin-top: 0;
+  }
+}
 
 .filters__list {
   display: -webkit-box;
@@ -663,6 +669,13 @@ body {
 }
 .card-overlay::before {
   content: "";
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
   position: absolute;
   top: 0;
   left: 0;
