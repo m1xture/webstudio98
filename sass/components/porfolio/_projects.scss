@@ -55,6 +55,12 @@
     margin-top: 0;
   }
 }
+.filters__item:nth-child(3) {
+  margin-top: 15px;
+  @media screen and (min-width:400px){
+    margin-top: 0;
+  }
+}
 .filters__list {
   display: flex;
   flex-wrap: wrap;

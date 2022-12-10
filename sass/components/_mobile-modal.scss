@@ -106,18 +106,27 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
     width: 22px;
-    height: 50px;
+    
+    @media screen and (min-width:320px){
+      height: 65%;
+    }
+    @media screen and (min-width:480px){
+      height: 50px;
+    }
   }
 }
 .aside__link {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
+  
   line-height: 22px;
   letter-spacing: 0.02em;
   color: $hover-color;
   @media screen and (min-width:320px){
     font-size: 80%;
+  }
+  @media screen and (min-width:480px){
+    font-size: 18px;
   }
 }

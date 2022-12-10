@@ -177,11 +177,14 @@ body {
 }
 @media screen and (min-width: 320px) {
   .nav__burger {
-    margin-left: 120px;
+    position: absolute;
+    right: 23px;
+    top: 6px;
   }
 }
 @media screen and (min-width: 480px) {
   .nav__burger {
+    position: static;
     margin-left: 256px;
   }
 }
@@ -477,6 +480,15 @@ body {
 }
 @media screen and (min-width: 768px) {
   .filters__item:nth-child(4) {
+    margin-top: 0;
+  }
+}
+
+.filters__item:nth-child(3) {
+  margin-top: 15px;
+}
+@media screen and (min-width: 400px) {
+  .filters__item:nth-child(3) {
     margin-top: 0;
   }
 }
@@ -1155,14 +1167,22 @@ body {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   width: 22px;
-  height: 50px;
+}
+@media screen and (min-width: 320px) {
+  .aside__item:after {
+    height: 65%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .aside__item:after {
+    height: 50px;
+  }
 }
 
 .aside__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -1170,5 +1190,10 @@ body {
 @media screen and (min-width: 320px) {
   .aside__link {
     font-size: 80%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .aside__link {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=porfolio.css.map */
