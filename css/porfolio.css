@@ -878,6 +878,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-contacts {
+    margin-bottom: 0;
     margin-left: 0;
     text-align: left;
   }
