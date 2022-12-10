@@ -634,6 +634,36 @@ body {
   }
 }
 
+.card__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  height: 294px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69), -webkit-transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88);
+  transition: opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69), -webkit-transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88);
+  transition: transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88), opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69);
+  transition: transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88), opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69), -webkit-transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88);
+  background: rgba(33, 150, 243, 0.9);
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+.projects__item:hover .card__description {
+  opacity: 1;
+}
+
 .projects__pic {
   width: 450px;
 }
@@ -685,36 +715,6 @@ body {
 
 .card-overlay {
   position: relative;
-}
-.card-overlay::before {
-  content: "";
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  -webkit-transition: opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69), -webkit-transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88);
-  transition: opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69), -webkit-transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88);
-  transition: transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88), opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69);
-  transition: transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88), opacity 300ms cubic-bezier(0.1, 0.54, 0.95, 0.6), background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69), -webkit-transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88);
-  padding-top: 63px;
-  padding-left: 24px;
-  padding-right: 24px;
-  background: rgba(33, 150, 243, 0.9);
-  -webkit-transform: translate(0);
-          transform: translate(0);
-  color: #fff;
-  opacity: 0;
 }
 
 .projects__item:hover .card-overlay::before {
@@ -1059,6 +1059,16 @@ body {
   top: 0;
   left: 0;
   background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
@@ -1148,6 +1158,7 @@ body {
   margin-top: 64px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 30px;
 }
 
 .aside__item {
