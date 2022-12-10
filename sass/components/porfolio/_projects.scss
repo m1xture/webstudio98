@@ -166,35 +166,26 @@
     width: 370px;
   }
 }
-.item-block {
-  // @media screen and (min-width: 480px) {
-  //   width: 100%;
-  //   height: 294px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   width: 354px;
-  //   height: 294px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   width: 370px;
-  //   height: 294px;
-  // }
-}
 .card__description {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  padding-top: 63px;
+  padding-top: 77px;
   padding-left: 24px;
   padding-right: 24px;
-  height: 294px;
-
-  @media screen and (min-width:){
-    
+  @media screen and (min-width:480px){
+    // height: 357.56px;
   }
-
+  @media screen and (min-width:768px){
+    padding-top: 49px;
+    // height: 281px;
+  }
+  @media screen and (min-width:1200px){
+    padding-top: 63px;
+    // height: 294px;
+  }
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;

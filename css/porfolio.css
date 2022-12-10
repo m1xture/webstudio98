@@ -76,6 +76,17 @@ body {
   }
 }
 
+.header .container {
+  margin-right: 0;
+  margin-left: 0;
+}
+@media screen and (min-width: 480px) {
+  .header .container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .header .header__logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -640,10 +651,9 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
-  padding-top: 63px;
+  padding-top: 77px;
   padding-left: 24px;
   padding-right: 24px;
-  height: 294px;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -660,6 +670,17 @@ body {
   -webkit-transform: translate(0);
           transform: translate(0);
 }
+@media screen and (min-width: 768px) {
+  .card__description {
+    padding-top: 49px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__description {
+    padding-top: 63px;
+  }
+}
+
 .projects__item:hover .card__description {
   opacity: 1;
 }
