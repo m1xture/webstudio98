@@ -375,10 +375,15 @@ body {
           transform: scaleX(0);
 }
 .header__item:hover::after {
-  opacity: 1;
-  width: 100%;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  opacity: 0;
+}
+@media screen and (min-width: 1200px) {
+  .header__item:hover::after {
+    opacity: 1;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 .header__item:first-child {
   margin-left: 0;
