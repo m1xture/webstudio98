@@ -55,6 +55,10 @@ body {
   }
 }
 
+button {
+  cursor: pointer;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;

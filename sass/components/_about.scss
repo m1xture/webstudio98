@@ -1,13 +1,13 @@
 .about {
   padding-top: 94px;
   display: none;
-  @media screen and (min-width:480px){
+  @media screen and (min-width: 480px) {
     display: none;
   }
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     display: none;
   }
-  @media screen and (min-width:1200px){
+  @media screen and (min-width: 1200px) {
     display: block;
   }
 }
@@ -33,6 +33,15 @@
   height: 70px;
   position: absolute;
   top: 224px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 300ms cubic-bezier(0.6, -0.02, 0.59, 0.88),
+    opacity 300ms cubic-bezier(.53,.33,.83,.67),
+    background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69);
+  transform: translate(0);
+}
+.about__item:hover .about-block {
+  opacity: 1;
 }
 .about-block__subtitle {
   font-family: 'Roboto';

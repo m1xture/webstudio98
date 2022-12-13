@@ -182,12 +182,66 @@
   background: $text-color;
   width: 16px;
   height: 15px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.modal__checkbox + .checkbox__label {
+  display: inline-flex;
+  align-items: center;
+}
+.modal__checkbox + .checkbox__label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $text-color;
+  border-radius: 2px;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
+  transition-delay: 50ms;
+}
+.modal__checkbox:checked + .checkbox__label::before {
+  border-color: $hover-color;
+  background-color: $hover-color;
+  background-image: url(../images12/df.svg);
+
+}
+
+.modal__checkbox:not(:disabled):not(:checked) + .checkbox__label:hover::before {
+  border-color: $hover-color;
+}
+
+.modal__checkbox:not(:disabled):active + .checkbox__label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.modal__checkbox:focus + .checkbox__label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.modal__checkbox:focus:not(:checked) + .checkbox__label::before {
+  border-color: #80bdff;
+}
+
+.modal__checkbox:disabled + .checkbox__label::before {
+  background-color: #e9ecef;
 }
 .checkbox-block {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 12px;
+  justify-content: center;
+  padding-right: auto;
+  padding-left: auto;
 }
 .modal__link {
   color: $hover-color;
