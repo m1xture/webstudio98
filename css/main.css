@@ -819,11 +819,8 @@ button {
     width: 448px;
   }
 }
-.modal__input:hover,
-.modal__input :focus {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
-  fill: #2196f3;
+.modal__input:focus {
+  border-color: #2196f3;
 }
 
 .modal__svg {
@@ -886,6 +883,13 @@ button {
           transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
+}
+.modal__textarea:placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 @media screen and (min-width: 480px) {
   .modal__textarea {
@@ -952,7 +956,6 @@ button {
   margin-right: 0.5em;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 50% 50%;
   -webkit-transition-property: border;
   transition-property: border;
   -webkit-transition-duration: 250ms;
@@ -1010,6 +1013,8 @@ button {
 }
 
 .modal__link {
+  display: block;
+  margin-left: 5px;
   color: #2196f3;
   text-decoration: underline;
 }
