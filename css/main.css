@@ -1603,11 +1603,6 @@ button {
           justify-content: center;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .footer-contacts {
-    margin-left: 51px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-bottom: 0;
@@ -1903,6 +1898,10 @@ button {
   color: #757575;
   margin-top: 32px;
   display: inline;
+}
+
+.menu-contacts {
+  padding-left: 40px;
 }
 
 .aside {
