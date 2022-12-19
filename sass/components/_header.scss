@@ -256,3 +256,27 @@
   margin-right: 10px;
   fill: currentColor;
 }
+.header__submenu {
+  display: none;
+}
+.nav__item:nth-child(3):hover .header__submenu {
+  display: block;
+  position: absolute;
+  // top: 50px;
+  background-color: white;
+  width: 250px;
+  border-radius: 20px;
+  padding: 15px 10px 10px 13px;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.39);
+  
+}
+.header__submenu:hover {
+  transform: translateY(50%);
+}
+.submenu__link {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: $hover-color;
+}
