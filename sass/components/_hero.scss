@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images12/hero/hero-background-mob-1x.png);
-  @media screen (min-resolution: 2dppx) {
+  @media screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -33,7 +33,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images12/hero/hero-background-tab-1x.png);
-    @media screen (min-resolution: 2dppx){
+    @media screen and (min-resolution: 2dppx){
        background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),

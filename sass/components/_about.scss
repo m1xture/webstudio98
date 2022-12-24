@@ -39,6 +39,7 @@
     opacity 300ms cubic-bezier(.53,.33,.83,.67),
     background-color 250ms cubic-bezier(0.44, 0.32, 0.36, 0.69);
   transform: translate(0);
+  transition-delay: 100ms;
 }
 .about__item:hover .about-block {
   opacity: 1;
