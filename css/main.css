@@ -560,6 +560,7 @@ button {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    max-width: 696px;
   }
 }
 .hero__button {
@@ -1965,7 +1966,7 @@ button {
   letter-spacing: 0.02em;
   color: #757575;
   margin-top: 32px;
-  display: inline;
+  display: block;
 }
 
 .menu-contacts {
