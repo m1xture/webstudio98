@@ -62,6 +62,9 @@
     &:hover {
       fill: $hover-color;
       border-color: $hover-color;
+      @media screen and (min-width: 768px){
+        transform: scale(1.05);
+      }
     }
     // @media screen and (min-width: 480px) {
     //   width: 210px;

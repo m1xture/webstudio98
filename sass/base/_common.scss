@@ -23,4 +23,8 @@ body {
 }
 button {
   cursor: pointer;
+  transition-duration: 250ms;
+  &:hover {
+     transform: scale(1.05);
+  }
 }

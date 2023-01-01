@@ -98,6 +98,9 @@
   @media screen and (min-width: 1200px) {
     width: 448px;
   }
+  &:hover {
+    border-color: $hover-color;
+  }
   &:focus {
     border-color: $hover-color;
   }
@@ -114,6 +117,7 @@
   transition-delay: 50ms;
   &:hover {
     fill: $hover-color;
+    border-color: $hover-color;
   }
 }
 .modal__label {
