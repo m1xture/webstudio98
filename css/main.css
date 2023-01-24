@@ -653,6 +653,7 @@ button:hover {
   .why-we__item {
     width: 270px;
     margin-left: 30px;
+    margin-right: 0;
   }
 }
 .why-we__item:nth-child(2n) {
