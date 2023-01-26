@@ -40,6 +40,14 @@ img {
   width: 100%;
 }
 
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
 body {
   font-family: "Roboto";
 }
@@ -479,6 +487,14 @@ button:hover {
   width: 20px;
   height: 20px;
   background-image: url(.../images12/svg/arrow.svg);
+}
+
+.submenu__qr-code {
+  width: 100%;
+}
+
+.submenu__item:first-child {
+  margin-bottom: 8px;
 }
 
 .hero {
@@ -944,7 +960,7 @@ button:hover {
   padding-left: 16px;
   resize: none;
   margin-bottom: 20px;
-  color: rgba(117, 117, 117, 0.5);
+  color: #212121;
   -webkit-transition-property: border;
   transition-property: border;
   -webkit-transition-duration: 250ms;
@@ -954,7 +970,35 @@ button:hover {
   -webkit-transition-delay: 50ms;
           transition-delay: 50ms;
 }
-.modal__textarea:placeholder {
+.modal__textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__textarea::-moz-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__textarea:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__textarea::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__textarea::placeholder {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;

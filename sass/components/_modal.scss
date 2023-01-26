@@ -149,12 +149,12 @@
   padding-left: 16px;
   resize: none;
   margin-bottom: 20px;
-  color: rgba(117, 117, 117, 0.5);
+  color: $text-color;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
   transition-delay: 50ms;
-  &:placeholder {
+  &::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;

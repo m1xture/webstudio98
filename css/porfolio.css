@@ -28,6 +28,14 @@ img {
   width: 100%;
 }
 
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
 body {
   font-family: "Roboto";
 }
@@ -467,6 +475,14 @@ button:hover {
   width: 20px;
   height: 20px;
   background-image: url(.../images12/svg/arrow.svg);
+}
+
+.submenu__qr-code {
+  width: 100%;
+}
+
+.submenu__item:first-child {
+  margin-bottom: 8px;
 }
 
 .filters {
